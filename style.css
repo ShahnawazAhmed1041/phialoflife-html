@@ -12,6 +12,11 @@ body {
     font-family: 'Lato';
 }
 
+img.img-fluid1.btlo {
+    margin-left: 20px;
+    MARGIN-TOP: -50px !important;
+}
+
 
 .ct-txt.droptext {
     padding-top: 50px;
@@ -244,7 +249,7 @@ div#ct-row {
 
 .main-logo {
     display: flex;
-    align-items: flex-end;
+    align-items: end;
 }
 
 .top-links ul {
