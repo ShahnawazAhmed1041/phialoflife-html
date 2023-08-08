@@ -585,6 +585,11 @@ button.flip1 {
 }
 
 .back {
+    padding-top: max(69%) !important;
+    padding-bottom: max(69%) !important;
+}
+
+.front {
     padding-top: max(63%) !important;
     padding-bottom: max(63%) !important;
 }
@@ -614,14 +619,13 @@ div#team .roadmap-box-inner {
     border: 1px solid rgba(196, 196, 196, 0.50);
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    width: auto;
-    height: fit-content;
+
     margin: 0px;
     padding-bottom: 10px;
 }
 
 .roadmap-box-inner img {
-    width: 75%;
+    width: 65%;
     border-radius: 12px;
     margin: 0px;
 }
@@ -759,6 +763,11 @@ div#team {
 }
 
 
+.mobrow{
+    padding-top: 6rem;
+}
+
+
 @media (min-width: 320px) and (max-width: 767px) {
     div#ct-row1 img {
         margin: auto;
@@ -834,6 +843,10 @@ button.slick-next.slick-arrow {
 
     ..bid-slider-gallery.slick-vertical.slick-initialized.slick-slider {
         display: none;
+    }
+    .foot{
+        position: absolute;
+        bottom: 0px;
     }
 
     .row.foot {
@@ -1002,18 +1015,3 @@ button.slick-next.slick-arrow {
 }
 }
 
-
-
-@media (min-width: 1234px){
-.back {
-    padding-top: max(62%) !important;
-    padding-bottom: max(61%) !important;
-}
-}
-
-@media (max-width: 1230px){
-.back {
-    padding-top: max(66%) !important;
-    padding-bottom: max(66%) !important;
-}
-}
