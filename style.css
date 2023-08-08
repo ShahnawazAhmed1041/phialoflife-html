@@ -379,7 +379,6 @@ div#ct-row {
 
 .box1 .back {
     width: 100%;
-    height: auto;
     border-radius: 12px;
     padding: 20px 30px 20px 30px;
     border-radius: 12px;
@@ -413,7 +412,6 @@ div#ct-row {
 
 .box2 .back {
     width: 100%;
-    height: auto;
     border-radius: 12px;
     padding: 20px 30px 20px 30px;
     border-radius: 12px;
@@ -447,7 +445,6 @@ div#ct-row {
 
 .box3 .back {
     width: 100%;
-    height: auto;
     border-radius: 12px;
     padding: 20px 30px 20px 30px;
     border-radius: 12px;
@@ -481,7 +478,6 @@ div#ct-row {
 
 .box4 .back {
     width: 100%;
-    height: auto;
     border-radius: 12px;
     padding: 20px 30px 20px 30px;
     border-radius: 12px;
@@ -522,7 +518,6 @@ div#ct-row {
 
 .box5 .back {
     width: 100%;
-    height: auto;
     border-radius: 12px;
     padding: 20px 30px 20px 30px;
     border-radius: 12px;
@@ -553,7 +548,8 @@ div#ct-row {
 button.flip1 {
     border: none;
     margin: auto;
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: clamp(1rem, 0.4512rem + 0.9146vw, 3.5rem);
     display: flex;
     width: auto;
     height: auto;
@@ -588,6 +584,11 @@ button.flip1 {
     display: flex;
     padding: 10px;
     width: 100% !important;
+}
+
+.back {
+    padding-top: max(65%) !important;
+    padding-bottom: max(65%) !important;
 }
 
 svg {
