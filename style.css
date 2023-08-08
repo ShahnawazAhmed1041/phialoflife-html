@@ -391,10 +391,10 @@ div#ct-row {
     color: #181a1f;
     text-align: center;
     font-family: Lato;
-    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 21px;
+    font-size: clamp(0.75rem, 0.3125rem + 0.8750vw, 2.5rem);
+    line-height: clamp(0.75rem, 0.3125rem + 0.8750vw, 2.5rem);
 }
 
 .box2 .front {
@@ -424,10 +424,10 @@ div#ct-row {
     color: #181a1f;
     text-align: center;
     font-family: Lato;
-    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 21px;
+    font-size: clamp(0.75rem, 0.3125rem + 0.8750vw, 2.5rem);
+    line-height: clamp(0.75rem, 0.3125rem + 0.8750vw, 2.5rem);
 }
 
 .box3 .front {
@@ -457,10 +457,10 @@ div#ct-row {
     color: #181a1f;
     text-align: center;
     font-family: Lato;
-    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 21px;
+    font-size: clamp(0.75rem, 0.3125rem + 0.8750vw, 2.5rem);
+    line-height: clamp(0.75rem, 0.3125rem + 0.8750vw, 2.5rem);
 }
 
 .box4 .front {
@@ -487,13 +487,12 @@ div#ct-row {
 }
 
 .box.box4.flipped .back p {
-    color: rgba(24, 26, 31, 0.5);
     text-align: center;
     font-family: Lato;
-    font-size: 10px;
     font-style: normal;
     font-weight: 400;
-    line-height: 121%;
+    font-size: clamp(0.75rem, 0.3125rem + 0.8750vw, 2.5rem);
+    line-height: clamp(0.75rem, 0.3125rem + 0.8750vw, 2.5rem);
 }
 
 .back li {
@@ -530,10 +529,10 @@ div#ct-row {
     color: #181a1f;
     text-align: center;
     font-family: Lato;
-    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 21px;
+    font-size: clamp(0.75rem, 0.3125rem + 0.8750vw, 2.5rem);
+    line-height: clamp(0.75rem, 0.3125rem + 0.8750vw, 2.5rem);
 }
 
 .mobile {
@@ -565,13 +564,12 @@ button.flip1 {
 
 
 .box.box4.flipped .back p {
-    color: rgba(24, 26, 31, 0.5);
     text-align: center;
     font-family: Lato;
-    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 21px;
+    font-size: clamp(0.75rem, 0.3125rem + 0.8750vw, 2.5rem);
+    line-height: clamp(0.75rem, 0.3125rem + 0.8750vw, 2.5rem);
 }
 
 .front {
@@ -587,8 +585,8 @@ button.flip1 {
 }
 
 .back {
-    padding-top: max(65%) !important;
-    padding-bottom: max(65%) !important;
+    padding-top: max(63%) !important;
+    padding-bottom: max(63%) !important;
 }
 
 svg {
@@ -1001,5 +999,21 @@ button.slick-next.slick-arrow {
     .bid-slider-gallery .slick-list {
     height: fit-content !important;
     padding: 0px 0 0;
+}
+}
+
+
+
+@media (min-width: 1234px){
+.back {
+    padding-top: max(62%) !important;
+    padding-bottom: max(61%) !important;
+}
+}
+
+@media (max-width: 1230px){
+.back {
+    padding-top: max(66%) !important;
+    padding-bottom: max(66%) !important;
 }
 }
