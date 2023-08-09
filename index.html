@@ -10,7 +10,63 @@
 
         <link rel="stylesheet" type="text/css" href="style.css" />
         <style>
+
+.mobilehomecontent{
+    display: none;
+}
             
+
+@media (min-width: 320px) and (max-width: 767px)
+{
+
+    .mobilehomecontent{
+        display: block;
+    }
+
+    .home-line {
+    border-top: 1px solid #DADDE2;
+    padding: 10px 0px;
+}
+
+
+
+    .container-fluid.header {
+    DISPLAY: none;
+}
+
+.container-fluid.HOMEGALLERY {
+    display: none;
+}
+
+.row.foot{
+    display: none;
+}
+
+.copyright{
+    display: none;
+}
+
+.mobilehomecontent h3{
+color: #181A1F;
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 21px;
+PADDING-BOTTOM: 10PX;
+}
+
+.mobilehomecontent p{
+color: #181A1F;
+font-family: Lato;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 121%; /* 18.15px */
+}
+
+
+}
         </style>
     </head>
 
@@ -20,7 +76,7 @@
                 <div class="col-1">
                     <div class="logo">
                         <h5>Phial</h5>
-                        <p>of life</p>
+                        <p>of Life</p>
                     </div>
                 </div>
 
@@ -115,7 +171,8 @@
                         <div id="mySidenav" class="sidenav">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="index.html" class="bth">Back to home</a>
+                                    <a href="index.html" class="bth">Phial</a>
+                                    <a href="index.html" class="bth2">of Life</a>
                                 </div>
                                 <div class="col-md-6">
                                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -124,16 +181,16 @@
                             <div class="sidenavmobile">
                                 <ul>
                                     <li>
-                                        <a href="index.html">Overview<i class="arrow down"></i></a>
+                                        <a href="index.html">Overview</a>
                                     </li>
                                     <li>
-                                        <a href="gallery.html">Gallery<i class="arrow down"></i></a>
+                                        <a href="gallery.html">Gallery</a>
                                     </li>
                                     <li>
-                                        <a href="roadmap.html">Roadmap<i class="arrow down"></i></a>
+                                        <a href="roadmap.html">Roadmap</a>
                                     </li>
                                     <li>
-                                        <a href="team.html">Team<i class="arrow down"></i></a>
+                                        <a href="team.html">Team</a>
                                     </li>
                                     <li>
                                         <a href="https://www.instagram.com/phialoflife/" target="_blank">
@@ -142,17 +199,17 @@
                                     </li>
                                     <li>
                                         <a href="https://twitter.com/PhialofLife" target="_blank">
-                                            <span>Twitter<img src="assets/images/twitter.svg" /></span>
+                                            <span>Twitter<img src="assets/images/twitter.svg" class="twiside" /></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="https://discord.com/invite/DVC57T7k" target="_blank">
-                                            <span>Discord<img src="assets/images/discord.svg" /></span>
+                                            <span>Discord<img src="assets/images/discord.svg" class="disside" /></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="https://discord.com/invite/DVC57T7k" target="_blank">
-                                            <span>OpenSea<img src="assets/images/opensea.svg" /></span>
+                                            <span>Visit us on OpenSea<img src="assets/images/opensea.svg"  class="openside" /></span>
                                         </a>
                                     </li>
                                 </ul>
@@ -261,6 +318,24 @@
     <p>Copyright © 2023 Oluju. All rights reserved</p>
   </div>
   </div>
+
+
+        <div class="container mobilehomecontent">
+            <div class="row">
+                <div class="col">
+                    <h3>Overview</h3>
+                    <div class="home-line">
+                        
+                    </div>
+                    <p>Humanity is on the verge of a new dispensation in health and well-being. Come and join us as we look to forces beyond our environment inorder
+to elevate our health and well-being to unimaginable realms.
+</p>
+
+<p>Own a PhialofLife NFT and gain access to our health and well-being based virtual community and utilities.</p>
+                </div>
+            </div>
+        </div>
+
 
         <script src="assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>

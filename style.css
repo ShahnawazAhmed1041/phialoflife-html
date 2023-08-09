@@ -155,9 +155,9 @@ a.active {
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 15px 0px 10px 0px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 16px;
     color: white;
     display: block;
     transition: 0.3s;
@@ -325,8 +325,6 @@ div#ct-row {
 
 .box .front,
 .box .back {
-    width: 100%;
-    height: 100%;
     position: absolute;
     backface-visibility: hidden;
 }
@@ -580,19 +578,10 @@ button.flip1 {
 
 .back {
     display: flex;
-    padding: 10px;
     width: 100% !important;
 }
 
-.back {
-    padding-top: max(69%) !important;
-    padding-bottom: max(69%) !important;
-}
 
-.front {
-    padding-top: max(63%) !important;
-    padding-bottom: max(63%) !important;
-}
 
 svg {
     fill: white;
@@ -774,6 +763,39 @@ div#team {
         width: 100px;
     }
 
+    .sidenavmobile {
+    margin-top: -20px;
+    padding: 0px 20px;
+}
+
+.sidenavmobile a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #181A1F !important;
+}
+
+a.bth {
+    color: #181A1F !important;
+    font-family: Lato;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px 0px 0px 18px;
+}
+
+a.bth2 {
+    color: #656E81 !important;
+    padding-left: 20px;
+    margin-top: -24px;
+    color: #656E81;
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
 button.slick-prev.slick-arrow
 {
         width: 40px;
@@ -862,11 +884,11 @@ button.slick-next.slick-arrow {
     }
 
     div#mySidenav a {
-        color: black;
+        color: #181A1F;
     }
     div#mySidenav li {
-        border-bottom: 1px solid black;
-    }
+    border-bottom: 1px solid #DADDE2;
+}
     .sidenav img {
         float: right;
     }
@@ -921,13 +943,31 @@ button.slick-next.slick-arrow {
         padding: 6px !important;
     }
 
+    img.ins {
+    margin-top: -10px;
+}
+
+img.twiside {
+    margin-top: -5px;
+}
+
+img.disside {
+    margin-top: -7px;
+}
+
+img.openside {
+    margin-top: -5px;
+}
+
+
+
     .sidenav .closebtn {
-        position: absolute;
-        top: -72px;
-        right: 36px;
-        font-size: 45px;
-        margin-left: 0px;
-    }
+    position: absolute;
+    top: -84px;
+    right: 30px;
+    font-size: 45px;
+    margin-left: 0px;
+}
     .sidenav {
         padding: 0px 0px;
         height: 100%;
