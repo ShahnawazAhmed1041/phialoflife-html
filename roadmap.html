@@ -145,18 +145,23 @@
 
 
 .col-container {
-    padding: 0px 50px;
+    padding-top: clamp(90px, 6%, 140px);
+/*    padding: 0px 50px;*/
     display: flex;
-    width: 100%;
+    width: 95%;
 }
 
 
 
 .col-container .col {
-    border-radius: 12px;
+    border-radius: 14px;
     border: 1px solid #C4C4C4;
     background: #FFF;
-    padding: 50px 30px 30px 30px;
+/*    padding: 50px 30px 30px 30px;*/
+padding-top:50px;
+padding-bottom: 25px;
+    padding-left: clamp(30px, 2vw, 80px);
+    padding-right: clamp(30px, 2vw, 80px);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     display: flex;
     margin-left: 20px;
@@ -168,10 +173,12 @@
 color: #181A1F;
 text-align: center;
 font-family: Lato;
-font-size: 15px;
+/*font-size: 15px;*/
+font-size: clamp(0.8rem, -0.2692rem + 1.1077vw, 2.5rem);
+line-height: 130%;
 font-style: normal;
-font-weight: 700;
-line-height: 21px; /* 18.15px */
+font-weight: 400;
+/*line-height: 21px; /* 18.15px */*/
 }
 
 
@@ -179,10 +186,10 @@ line-height: 21px; /* 18.15px */
     color: rgba(24, 26, 31, 0.50);
 text-align: center;
 font-family: Lato;
-font-size: 10px;
+font-size: clamp(0.6rem, -0.2500rem + 0.8000vw, 1.5rem);
 font-style: normal;
 font-weight: 400;
-line-height: 16px; /* 12.1px */
+line-height: clamp(0.5rem, -0.2500rem + 0.8000vw, 1.5rem);
  
 
  }
@@ -198,15 +205,16 @@ font-family: Lato;
 font-size: 13px;
 font-style: normal;
 font-weight: 400;
-line-height: 121%; /* 15.73px */
 text-align: center;
+
+font-size: clamp(0.7rem, -0.2692rem + 1.1077vw, 2.5rem);
 }
 
 .container.ctv {
     padding-top: 100px;
 }
 
-@media (min-width: 767px){
+/*@media (min-width: 767px){
 .col-container .col {
     border-radius: 12px;
     border: 1px solid #C4C4C4;
@@ -219,8 +227,65 @@ text-align: center;
 }
 
 
+}*/
+
+       </style>
+       <style type="text/css">
+           .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 4600px;
+    margin: 0 auto;
+    width: 95%;
+/*    padding: 20px;*/
+    padding: clamp(40px, 4%, 100px) 20px 20px;
+    box-sizing: border-box;
+}
+.box {
+   border: 1px solid #C4C4C4;
+   border-radius: 5px;
+/*    padding: 20px;*/
+    box-sizing: border-box;
+    box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset ;
+    
+    
+
 }
 
+.box ul{
+    margin:0;
+    padding-left: clamp(10px, 1vw, 60px);
+    padding-right: clamp(10px, 1vw, 60px);
+    padding-top: clamp(30px, 2vw, 80px);
+    padding-bottom: clamp(30px, 2vw, 80px);
+}
+
+.box ul li{
+    list-style: disc;
+}
+
+
+
+.box p {
+    margin: 0;
+    font-size: clamp(1rem, -0.5000rem + 1.5000vw, 3.5rem);
+/*    font-size: clamp(1rem, 1vw, 3.5rem);*/
+/*    font-size: clamp(0.5rem, -0.3462rem + 1.5385vw, 4rem);*/
+    line-height: clamp(0.5rem, -0.3462rem + 1.5385vw, 4rem);
+/*    font-size: clamp(12px, 2vw, 26px);*/
+    padding-left: clamp(10px, 1vw, 60px);
+    padding-right: clamp(10px, 1vw, 60px);
+    padding-top: clamp(30px, 2vw, 80px);
+    padding-bottom: clamp(30px, 2vw, 80px);
+}
+
+.container::before,
+.container::after {
+    content: "";
+    width: 0;
+    grid-column: span 5;
+}
        </style>
 
     </head>
@@ -316,6 +381,7 @@ text-align: center;
 
         <!-- Desktop Body -->
 
+        
 
 <div class="container-fluid col-container">
   <div class="col">
@@ -355,14 +421,13 @@ text-align: center;
     <div class="boxes5">
                                 <p>OpenSea DROP (public sale) on Oct. 10 @ 9:00 am PDT.</p>
                                 <ul>
-                                    <li>Phase 1: 1K NFT for sale</li>
-                                    <li>Phase 2: 4k NFT for sale</li>
-                                    <li>Phase 3: 5k NFT for sale</li>
+                                    <li><span style="font-weight: 600;">Phase 1:</span>1K NFT for sale</li>
+                                    <li><span style="font-weight: 600;">Phase 2:</span>4k NFT for sale </li>
+                                    <li><span style="font-weight: 600;">Phase 3:</span>5k NFT for sale </li>
                                 </ul>
                     </div>
   </div>
-</div>
-
+</div> 
 
 <div class="container ctv">
     <div class="col">
