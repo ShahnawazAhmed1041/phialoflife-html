@@ -89,8 +89,63 @@
                 .mobrow {
                     padding-top: 0px;
                 }
+
+                .container-fluid.col-container {
+                   display: none;
+                }
             }
-        </style>
+
+
+.col-container {
+    padding: 0px 50px;
+    display: flex;
+    width: 100%;
+}
+
+
+
+.col-container .col {
+    border-radius: 12px;
+    border: 1px solid #C4C4C4;
+    background: #FFF;
+    padding: 50px 30px 30px 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.boxes1 p, .boxes2 p, .boxes3 p, .boxes4 li, .boxes5 p, .boxes5 li{
+color: #181A1F;
+text-align: center;
+font-family: Lato;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 21px; /* 18.15px */
+}
+
+
+.boxes4 p{
+    color: rgba(24, 26, 31, 0.50);
+text-align: center;
+font-family: Lato;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 12.1px */
+ 
+
+ }
+
+.boxes4 li, .boxes5 li {
+    text-align: left;
+    list-style-type: disc;
+}
+
+       </style>
+
     </head>
 
     <body>
@@ -183,7 +238,57 @@
         <!-- Desktop-header-closed -->
 
         <!-- Desktop Body -->
-        <section class="boxsection">
+
+
+<div class="container-fluid col-container">
+  <div class="col">
+    <div class="boxes1">
+                        <p>We are your neighbors, we are gifted with insights that will elevate your health and well-being to new realms. We want to take you on this journey with us.</p>
+                    </div>
+  </div>
+
+  <div class="col">
+    <div class="boxes2">
+                        <p>
+                                    We are building a health and well-being based community that extends to all walks of life. Our community moderators are gifted with insights that will empower our members with the mindset to ascend into
+                                    new realms in health and well-being.
+                                </p>
+                    </div>
+  </div>
+
+  <div class="col">
+    <div class="boxes3">
+                        <p>In an effort to spread the insights that we have acquired from another realm of life, we are bringing PhialofLife NFT project to the Metaverse.</p>
+                    </div>
+  </div>
+  
+  <div class="col">
+     <div class="boxes4">
+                        <ul>
+                                    <li>Voting rights</li>
+                                    <li>Metaverse health & well-being community</li>
+                                    <li>In-person health & well-being  conferences</li>
+                                    <li>Product launch that will align with project and benefit the community</li>
+                                </ul>
+                                <p>Before product launch, we will assess our community to ensure that our product choice brings value to our NFT holders. Members with voting rights will have a say in product choice and launch.</p>
+                    </div>
+  </div>
+  
+  <div class="col">
+    <div class="boxes5">
+                                <p>OpenSea DROP (public sale) on Oct. 10 @ 9:00 am PDT.</p>
+                                <ul>
+                                    <li>Phase 1: 1K NFT for sale</li>
+                                    <li>Phase 2: 4k NFT for sale</li>
+                                    <li>Phase 3: 5k NFT for sale</li>
+                                </ul>
+                    </div>
+  </div>
+</div>
+
+
+ <!-- 
+         <section class="boxsection">
             <div class="container-fluid macbook">
                 <div class="row mobrow">
                     <div class="col">
@@ -251,7 +356,8 @@
                 </div>
             </div>
         </section>
-        <!-- Desktop Body Closed -->
+  -->
+         <!-- Desktop Body Closed -->
 
         <!-- Mobile Header -->
         <div class="mobile-container">
