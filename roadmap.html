@@ -10,6 +10,49 @@
 
         <link rel="stylesheet" type="text/css" href="style.css" />
         <style>
+
+
+            .col-container .col {
+    border-radius: 12px;
+    border: 1px solid #C4C4C4;
+    background: #FFF;
+    padding: 50px 30px 30px 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*@media (min-width: 2000px){
+
+            .col-container .col {
+    padding-top: max(5%);
+    padding-bottom: max(5%);
+    border-radius: 12px;
+    border: 1px solid #C4C4C4;
+    background: #FFF;
+    /* padding: 50px 30px 30px 30px; */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.col-container p {
+    line-height: clamp(0.75rem, 0.3125rem + 0.875vw, 2.5rem);
+    font-size: clamp(0.75rem, 0.3125rem + 0.875vw, 2.5rem);
+}
+
+.col-container li {
+    line-height: clamp(0.75rem, 0.3125rem + 0.875vw, 2.5rem);
+    font-size: clamp(0.75rem, 0.3125rem + 0.875vw, 2.5rem);
+}
+
+
+}   */
+
+
             .front {
                 display: flex;
                 padding: 10px;
@@ -93,6 +136,11 @@
                 .container-fluid.col-container {
                    display: none;
                 }
+
+
+.container.ctv{
+    display: none;
+}
             }
 
 
@@ -142,6 +190,35 @@ line-height: 16px; /* 12.1px */
 .boxes4 li, .boxes5 li {
     text-align: left;
     list-style-type: disc;
+}
+
+.ctv p{
+    color: #0144EB;
+font-family: Lato;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 121%; /* 15.73px */
+text-align: center;
+}
+
+.container.ctv {
+    padding-top: 100px;
+}
+
+@media (min-width: 767px){
+.col-container .col {
+    border-radius: 12px;
+    border: 1px solid #C4C4C4;
+    background: #FFF;
+    padding: 50px 30px 30px 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
 }
 
        </style>
@@ -284,6 +361,13 @@ line-height: 16px; /* 12.1px */
                                 </ul>
                     </div>
   </div>
+</div>
+
+
+<div class="container ctv">
+    <div class="col">
+        <p>Click to view PhialofLife Whitepaper</p>
+    </div>
 </div>
 
 
