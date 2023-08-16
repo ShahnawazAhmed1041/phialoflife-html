@@ -784,7 +784,6 @@ div#team {
     }
 
     div#ct-row3 {
-        position: fixed;
         width: 100%;
         bottom: -25px;
     }
@@ -1130,6 +1129,7 @@ div#team {
         font-style: normal;
         font-weight: 600;
         line-height: 21px;
+        margin-bottom: 10px;
     }
 
     .mobilehomecontent p {
