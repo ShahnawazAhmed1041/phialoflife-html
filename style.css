@@ -14,11 +14,11 @@ body {
 
 img.img-fluid1.btlo {
     margin-left: 20px;
-    margin-top: -50px !important;
+    margin-top: -42px !important;
 }
 
 .ct-txt.droptext {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .container-fluid.gallerycontainer-mobile {
@@ -92,7 +92,7 @@ img.img-fluid1.btlo {
 a.active {
     color: #0d6efd;
     border-bottom: 2px solid #0d6efd;
-    padding-bottom: 9px;
+    padding-bottom: 6px;
 }
 
 .logo h5 {
@@ -253,7 +253,7 @@ div#ct-row {
     justify-content: center;
     align-items: end;
     margin: 0px;
-    padding-bottom: 17px;
+    padding-bottom: 7px;
 }
 
 .top-links a {
@@ -608,9 +608,30 @@ div#team .roadmap-box-inner {
     margin: 0px;
     padding-bottom: 10px;
 }
+div#team .roadmap-box-inner {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    width: auto !important;
+    height: auto !important;
+}
+
+.roadmap-box-inner h2 {
+    font-family: lato;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 18px;
+    line-height: 121%;
+    color: #181a1f;
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #bbb;
+}
+
+
 
 .roadmap-box-inner img {
-    width: 65%;
+    width: 80%;
     border-radius: 12px;
     margin: 0px;
 }
@@ -702,10 +723,15 @@ div#team {
 
 .roadmap-box {
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .container-ct-team {
-    padding: 0px 120px;
+    padding: 0px 300px;
+}
+
+.container-fluid.HOMEGALLERY{
+    padding-top: 30px;
 }
 
 .gallery-dots {
@@ -780,7 +806,7 @@ div#team {
     }
 
     .ct-txt.droptext {
-        padding-top: 30px;
+        padding-top: 20px;
     }
 
     div#ct-row3 {
