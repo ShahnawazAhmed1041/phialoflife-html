@@ -292,11 +292,11 @@
                     <div class="gallery-dots" id="gallery-dots">
                         <span class="gallery-dot"></span>
                         <span class="gallery-dot"></span>
+                        <!-- <span class="gallery-dot"></span>
                         <span class="gallery-dot"></span>
                         <span class="gallery-dot"></span>
                         <span class="gallery-dot"></span>
-                        <span class="gallery-dot"></span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -307,14 +307,14 @@
         <div class="container-fluid gallerycontainer-mobile">
             <div class="row">
                 <div class="gallery-container">
-                    <div class="gallery-slide" id="gallery-slide3">
+                    
                         <div class="gallery-item">
                             <img src="assets/images/gallery/1.png" alt="Image 1" />
                         </div>
                         <div class="gallery-item">
                             <img src="assets/images/gallery/2.png" alt="Image 2" />
                         </div>
-                    </div>
+                    
                     </div>
                 </div>
                     <div class="row">
@@ -329,14 +329,14 @@
                 </div>
             <div class="row">
                 <div class="gallery-container">
-                    <div class="gallery-slide" id="gallery-slide4">
+                    
                         <div class="gallery-item">
                             <img src="assets/images/gallery/5.png" alt="Image 5" />
                         </div>
                         <div class="gallery-item">
                             <img src="assets/images/gallery/6.png" alt="Image 6" />
                         </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="row">
@@ -439,10 +439,10 @@
             let currentSlide = 0;
 
             function showSlide(index) {
-                slide1.style.transform = `translateX(-${index * 20}%)`;
-                slide2.style.transform = `translateX(-${index * 20}%)`;
-                slide3.style.transform = `translateX(-${index * 20}%)`;
-                slide4.style.transform = `translateX(-${index * 20}%)`;
+                slide1.style.transform = `translateX(-${index * 100}%)`;
+                slide2.style.transform = `translateX(-${index * 100}%)`;
+                // slide3.style.transform = `translateX(-${index * 20}%)`;
+                // slide4.style.transform = `translateX(-${index * 20}%)`;
             }
 
             function setActiveDot(index) {
