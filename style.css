@@ -825,12 +825,12 @@ div#team {
     }
 
     .sidenavmobile {
-        margin-top: -20px;
+        
         padding: 0px 20px;
     }
 
     .sidenavmobile a {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 600;
         color: #181a1f !important;
     }
@@ -967,6 +967,7 @@ div#team {
     }
     div#mySidenav li {
         border-bottom: 1px solid #dadde2;
+        margin-top:10px;
     }
     .sidenav img {
         float: right;
@@ -1151,7 +1152,7 @@ div#team {
     .mobilehomecontent h3 {
         color: #181a1f;
         font-family: Lato;
-        font-size: 16px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 600;
         line-height: 21px;
