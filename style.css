@@ -1117,6 +1117,7 @@ div#team {
 
     .mobilehomecontent {
         display: block;
+        margin-top:45px;
     }
 
     .home-line {
