@@ -579,7 +579,7 @@ button.flip1 {
     width: 100% !important;
 }
 
-svg {
+/* svg {
     fill: white;
     color: white !important;
     padding-right: 0px;
@@ -587,7 +587,28 @@ svg {
     background-color: #c4c4c4;
     border-radius: 4px;
     padding: 3px;
-}
+    position: relative;
+} */
+
+svg {
+    position: relative;
+    fill: white;
+    color: white !important;
+    fill: white;
+    color: white !important;
+    background-color: #c4c4c4;
+    width: 40px !important;
+    border-radius: 4px;
+    padding: 4px;
+  }
+  
+  path {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+  }
+  
 
 .container.bottomcontainer p {
     color: #0144eb;
@@ -619,7 +640,8 @@ div#team .roadmap-box-inner {
     font-family: lato;
     font-style: normal;
     font-weight: 600 !important;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: clamp(1rem, -0.2692rem + 1.1077vw, 2.5rem);
     line-height: 121%;
     color: #181a1f;
     padding: 15px;
@@ -750,7 +772,7 @@ div#team {
 }
 
 .gallery-dot.active {
-    background-color: black;
+    background-color: #0d6efd;
 }
 
 .container-fluid.gallerycontainer {

@@ -392,10 +392,18 @@ button.slick-prev.slick-arrow:hover {}
 
 .box-slider {
     width: 223px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    box-shadow: 0 6px 6px #00000040;
+    height: 100%;
     border-radius: 12px;
-    margin: 0 15px;
+    margin: 0 15px 10px;
     overflow: hidden
+    
+}
+.box-slider img {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .ct-txt p {
@@ -546,12 +554,7 @@ ul.menu-links li {
     position: relative
 }
 
-.box-slider img {
-    border-radius: 12px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover
-}
+
 
 li.roadmap-box {
     float: left;
@@ -577,7 +580,7 @@ li.roadmap-box {
     font-family: lato;
     font-style: normal;
     font-weight: 400;
-    font-size: 14.5px;
+    font-size: clamp(0.8rem, -0.2692rem + 1.1077vw, 2.5rem);
     line-height: 135%;
     text-align: center;
     color: #656e81;
@@ -1110,6 +1113,7 @@ div#wallet .ct-txt {
     margin: auto;
     -ms-flex-item-align: center;
     align-self: center;
+    text-align: center;
     width: 150px;
     height: 225px;
     -webkit-animation: to-fly .4s infinite;
@@ -1127,11 +1131,13 @@ div#wallet .ct-txt {
 .beelicious-body h4 {
     font-weight: 900;
     text-transform: uppercase;
-    margin: 6px 0 0 -12%;
+    /* margin: 6px 0 0 -12%; <<<<<<<< old */ 
+    margin: 7px 0 0 0;
     font-size: 20px;
     text-align: center;
     text-align: center;
-    background: linear-gradient(to right, #ffa202 20%, #c0ffc5 40%, #ff0 60%, #fff 80%);
+    background: linear-gradient(to right, #0250ff 20%, #79ccfd 40%, #a8abff 60%, #fff 80%);
+    /* background: linear-gradient(to right, #ffa202 20%, #c0ffc5 40%, #ff0 60%, #fff 80%); */
     background-size: 200% auto;
     color: #000;
     background-clip: text;
