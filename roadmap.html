@@ -282,15 +282,33 @@ font-style: normal;
 font-weight: 400;
 }
 
+.boxes1 h4, .boxes2 h4, .boxes3 h4, .boxes4 h4, .boxes5 h4 {
+color: #181A1F;
+text-align: center;
+font-family: Lato;
+/*font-size: 15px;*/
+font-size: clamp(1rem, -0.2692rem + 1.1077vw, 2.5rem);
+/* line-height: 130%; */
+font-style: normal;
+font-weight: 700;
+position: absolute;
+top:20;
+left:2;
+}
+
+.boxes1, .boxes2,.boxes3,.boxes4,.boxes5{
+    margin-top: clamp(0.5rem, -0.2692rem + 1.1077vw, 2.5rem);
+}
+
 
 .boxes4 p{
     color: rgba(24, 26, 31, 0.50);
-text-align: center;
+/* text-align: center; */
 font-family: Lato;
-font-size: clamp(0.6rem, -0.2500rem + 0.8000vw, 1.5rem);
+font-size: clamp(0.73rem, -0.2500rem + 0.8000vw, 1.5rem);
 font-style: normal;
 font-weight: 400;
-line-height: clamp(0.5rem, -0.2500rem + 0.8000vw, 1.5rem);
+line-height: clamp(0.7rem, -0.2500rem + 0.8000vw, 1.5rem);
  
 
  }
@@ -303,16 +321,16 @@ line-height: clamp(0.5rem, -0.2500rem + 0.8000vw, 1.5rem);
 .ctv p{
     color: #0144EB;
 font-family: Lato;
-font-size: 13px;
+/* font-size: 16px; */
 font-style: normal;
 font-weight: 400;
 text-align: center;
 
-font-size: clamp(0.7rem, -0.2692rem + 1.1077vw, 2.5rem);
+font-size: clamp(1rem, -0.2692rem + 1.1077vw, 2.5rem);
 }
 
 .container.ctv {
-    padding-top: 100px;
+    padding-top: 30px;
 }
 
 /*@media (min-width: 767px){
@@ -487,12 +505,14 @@ font-size: clamp(0.7rem, -0.2692rem + 1.1077vw, 2.5rem);
 <div class="container-fluid col-container">
   <div class="col">
     <div class="boxes1">
+        <h4>Vision</h4>
                         <p>We are your neighbors, we are gifted with insights that will elevate your health and well-being to new realms. We want to take you on this journey with us.</p>
                     </div>
   </div>
 
   <div class="col">
     <div class="boxes2">
+        <h4>Community</h4>
                         <p>
                                     We are building a health and well-being based community that extends to all walks of life. Our community moderators are gifted with insights that will empower our members with the mindset to ascend into
                                     new realms in health and well-being.
@@ -502,12 +522,14 @@ font-size: clamp(0.7rem, -0.2692rem + 1.1077vw, 2.5rem);
 
   <div class="col">
     <div class="boxes3">
+        <h4>Metaverse</h4>
                         <p>In an effort to spread the insights that we have acquired from another realm of life, we are bringing PhialofLife NFT project to the Metaverse.</p>
                     </div>
   </div>
   
   <div class="col">
      <div class="boxes4">
+        <h4>Utility</h4>
                         <ul>
                                     <li>Voting rights</li>
                                     <li>Metaverse health & well-being community</li>
@@ -519,8 +541,10 @@ font-size: clamp(0.7rem, -0.2692rem + 1.1077vw, 2.5rem);
   </div>
   
   <div class="col">
+    
     <div class="boxes5">
-                                <p>OpenSea DROP (public sale) on Oct. 10 @ 9:00 am PDT.</p>
+        <h4>Mint</h4>
+                                <p>OpenSea DROP (public sale) on Jan. 10 @ 9:00 am PDT.</p>
                                 <ul>
                                     <li><span style="font-weight: 600;">Phase 1:</span>1K NFT for sale</li>
                                     <li><span style="font-weight: 600;">Phase 2:</span>4k NFT for sale </li>
@@ -532,7 +556,7 @@ font-size: clamp(0.7rem, -0.2692rem + 1.1077vw, 2.5rem);
 
 <div class="container ctv">
     <div class="col">
-        <p>Click to view PhialofLife Whitepaper</p>
+        <p>View PhialofLife Whitepaper</p>
     </div>
 </div>
 

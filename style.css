@@ -65,7 +65,7 @@ img.img-fluid1.btlo {
 
 .header .col-3 {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: self-end;
 }
 
@@ -110,7 +110,7 @@ a.active {
     font-family: Lato;
     font-size: 15px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 21px;
     margin-left: 2px;
 }
@@ -250,7 +250,7 @@ div#ct-row {
     text-align: center;
     height: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: end;
     margin: 0px;
     padding-bottom: 7px;
@@ -260,10 +260,10 @@ div#ct-row {
     color: #0060e8;
     font-family: Lato;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     line-height: normal;
     font-size: 16px;
-    padding: 10px;
+    padding: 10px 15px 10px 15px;
     border-radius: 4px;
     background: #fff;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -583,7 +583,7 @@ svg {
     fill: white;
     color: white !important;
     padding-right: 0px;
-    width: 30px !important;
+    width: 40px !important;
     background-color: #c4c4c4;
     border-radius: 4px;
     padding: 3px;
