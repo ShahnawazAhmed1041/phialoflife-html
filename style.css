@@ -11,6 +11,13 @@
 body {
     font-family: "Lato";
 }
+.nav a:focus {
+    /*background-color: lightblue;*/
+    border: 1px solid #0060e8;
+}
+.nav ul li a:focus{
+    border: 1px solid #0060e8;
+}
 
 img.img-fluid1.btlo {
     margin-left: 20px;
