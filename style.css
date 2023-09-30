@@ -14,6 +14,8 @@ body {
 .nav a:focus {
     /*background-color: lightblue;*/
     border: 1px solid #0060e8;
+    border-radius: 5px;
+    padding: 10px;
 }
 .nav ul li a:focus{
     border: 1px solid #0060e8;
