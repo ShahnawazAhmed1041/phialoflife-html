@@ -1,81 +1,81 @@
 <style>
-/* Add your custom CSS styling here to style the side navigation and other elements as needed */
+  /* Add your custom CSS styling here to style the side navigation and other elements as needed */
 
-/* Side Nav Styling */
-.sidenav {
-  width: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: #f2f2f2;
-  overflow-x: hidden;
-  transition: 0.3s;
-}
+  /* Side Nav Styling */
+  .sidenav {
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    transition: 0.3s;
+  }
 
-.sidenav ul {
-  list-style: none;
-  padding: 0;
-}
+  .sidenav ul {
+    list-style: none;
+    padding: 0;
+  }
 
-.sidenav li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
+  .sidenav li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
 
-.sidenav .box {
-  height: 100px;
-  width: 200px;
-  perspective: 1000px;
-}
+  .sidenav .box {
+    height: 100px;
+    width: 200px;
+    perspective: 1000px;
+  }
 
-.sidenav .front, .sidenav .back {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-  transition: transform 0.8s;
-}
+  .sidenav .front,
+  .sidenav .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.8s;
+  }
 
-.sidenav .back {
-  transform: rotateY(180deg);
-}
+  .sidenav .back {
+    transform: rotateY(180deg);
+  }
 
-.sidenav .flipped .front {
-  transform: rotateY(180deg);
-}
+  .sidenav .flipped .front {
+    transform: rotateY(180deg);
+  }
 
-.sidenav .flipped .back {
-  transform: rotateY(0);
-}
+  .sidenav .flipped .back {
+    transform: rotateY(0);
+  }
 
-/* Close icon styling */
-.close-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
+  /* Close icon styling */
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
 
-/* Image and Button container styling */
-.image-button-container {
-  margin-top: 20px;
-}
+  /* Image and Button container styling */
+  .image-button-container {
+    margin-top: 20px;
+  }
 
-.image-button-container img {
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
-}
+  .image-button-container img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
 
-.image-button-container button {
-  padding: 10px 20px;
-  font-size: 16px;
-}
-
+  .image-button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
 </style>
 
 <!-- Close icon at the top -->
@@ -84,7 +84,7 @@
 <!-- Image and button in a new row -->
 <div class="container image-button-container">
   <div class="row">
-    <img src="assets/images/logo1.gif" alt="Image">
+    <img src="assets/images/logo1.gif" alt="Image" />
     <button>Drop</button>
   </div>
 </div>
@@ -101,59 +101,65 @@
               <button onclick="flipBox(1)" class="flip1">Overview</button>
             </div>
             <div class="back">
-              <p>We are your neighbors, we are gifted with insights that will elevate your health and well-being to new realms. We want to take you on this journey with us.</p>
+              <p>
+                We are your neighbors, we are gifted with insights that will
+                elevate your health and well-being to new realms. We want to
+                take you on this journey with us.
+              </p>
             </div>
           </div>
         </li>
 
         <!-- Add more menu items here as needed -->
         <!-- ... -->
-
       </ul>
     </div>
   </div>
 
   <div class="container bottomcontainer">
     <div class="row">
-      <p>Click to view PhialofLife Whitepaper</p>
+      <p>
+        <a href="https://phialoflife.com/PhialofLife-Whitepaper.pdf"
+          >Click to view PhialofLife Whitepaper</a
+        >
+      </p>
     </div>
   </div>
 </div>
 
 <script>
-// JavaScript functions as provided in your code.
-// Make sure to include this in your HTML file within the <script> tags.
+  // JavaScript functions as provided in your code.
+  // Make sure to include this in your HTML file within the <script> tags.
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-var currentBox = null;
-
-function flipBox(boxNumber) {
-  var box = document.getElementsByClassName("box")[boxNumber - 1];
-  box.classList.add("flipped");
-
-  // Reset the previous box if it exists
-  if (currentBox && currentBox !== box) {
-    currentBox.classList.remove("flipped");
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
   }
 
-  currentBox = box;
-}
-
-function resetBox(boxNumber) {
-  var box = document.getElementsByClassName("box")[boxNumber - 1];
-  box.classList.remove("flipped");
-
-  // Clear the current box variable
-  if (currentBox === box) {
-    currentBox = null;
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
   }
-}
 
+  var currentBox = null;
+
+  function flipBox(boxNumber) {
+    var box = document.getElementsByClassName("box")[boxNumber - 1];
+    box.classList.add("flipped");
+
+    // Reset the previous box if it exists
+    if (currentBox && currentBox !== box) {
+      currentBox.classList.remove("flipped");
+    }
+
+    currentBox = box;
+  }
+
+  function resetBox(boxNumber) {
+    var box = document.getElementsByClassName("box")[boxNumber - 1];
+    box.classList.remove("flipped");
+
+    // Clear the current box variable
+    if (currentBox === box) {
+      currentBox = null;
+    }
+  }
 </script>

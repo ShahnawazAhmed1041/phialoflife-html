@@ -1,339 +1,345 @@
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Phial Of Life</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <head>
+    <meta charset="utf-8" />
+    <title>Phial Of Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      .col-container .col {
+        border-radius: 12px;
+        border: 1px solid #c4c4c4;
+        background: #fff;
+        padding: 50px 30px 30px 30px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
 
+      @media (min-width: 2000px) {
+        .col-container .col {
+          padding-top: max(5%);
+          padding-bottom: max(5%);
+          border-radius: 12px;
+          border: 1px solid #c4c4c4;
+          background: #fff;
+          /* padding: 50px 30px 30px 30px; */
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+          display: flex;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
 
-            .col-container .col {
-    border-radius: 12px;
-    border: 1px solid #C4C4C4;
-    background: #FFF;
-    padding: 50px 30px 30px 30px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+        .col-container p {
+          line-height: clamp(0.75rem, 0.3125rem + 0.875vw, 2.5rem);
+          font-size: clamp(0.75rem, 0.3125rem + 0.875vw, 2.5rem);
+        }
 
-@media (min-width: 2000px){
+        .col-container li {
+          line-height: clamp(0.75rem, 0.3125rem + 0.875vw, 2.5rem);
+          font-size: clamp(0.75rem, 0.3125rem + 0.875vw, 2.5rem);
+        }
+      }
 
-            .col-container .col {
-    padding-top: max(5%);
-    padding-bottom: max(5%);
-    border-radius: 12px;
-    border: 1px solid #C4C4C4;
-    background: #FFF;
-    /* padding: 50px 30px 30px 30px; */
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+      .front {
+        display: flex;
+        padding: 10px;
+        width: 100%;
+        height: AUTO;
+        padding-top: max(55%);
+        padding-bottom: max(55%);
 
+        align-items: center; /* Vertically center the content */
+        justify-content: center; /* Horizontally center the content */
+      }
 
-.col-container p {
-    line-height: clamp(0.75rem, 0.3125rem + 0.875vw, 2.5rem);
-    font-size: clamp(0.75rem, 0.3125rem + 0.875vw, 2.5rem);
-}
+      .back {
+        display: flex;
+        padding: 10px;
+        width: 100%;
+        height: AUTO;
+        padding-top: max(55%);
+        padding-bottom: max(55%);
 
-.col-container li {
-    line-height: clamp(0.75rem, 0.3125rem + 0.875vw, 2.5rem);
-    font-size: clamp(0.75rem, 0.3125rem + 0.875vw, 2.5rem);
-}
+        align-items: center; /* Vertically center the content */
+        justify-content: center; /* Horizontally center the content */
+      }
 
+      @media (min-width: 120px) and (max-width: 767px) {
+        .vision p {
+          color: #181a1f;
+          font-family: Lato;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 121%;
+          padding-top: 10px;
+        }
 
-}   
+        .community p {
+          color: #181a1f;
+          font-family: Lato;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 121%;
+          padding-top: 10px;
+        }
 
+        .metaverse p {
+          color: #181a1f;
+          font-family: Lato;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 121%;
+          padding-top: 10px;
+        }
 
-            .front {
-                display: flex;
-                padding: 10px;
-                width: 100%;
-                height: AUTO;
-                padding-top: max(55%);
-                padding-bottom: max(55%);
+        .utility p {
+          color: #181a1f;
+          font-family: Lato;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 121%;
+          padding-top: 10px;
+        }
 
-                align-items: center; /* Vertically center the content */
-                justify-content: center; /* Horizontally center the content */
-            }
+        .mint p {
+          color: #181a1f;
+          font-family: Lato;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 121%;
+          padding-top: 10px;
+        }
 
-            .back {
-                display: flex;
-                padding: 10px;
-                width: 100%;
-                height: AUTO;
-                padding-top: max(55%);
-                padding-bottom: max(55%);
+        .vision {
+          border-radius: 12px;
+          border: 1px solid rgba(196, 196, 196, 0.5);
+          background: #fff;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+          padding: 20px 17px;
+          margin-bottom: 20px;
+          margin-top: 20px;
+        }
 
-                align-items: center; /* Vertically center the content */
-                justify-content: center; /* Horizontally center the content */
-            }
+        .community {
+          border-radius: 12px;
+          border: 1px solid rgba(196, 196, 196, 0.5);
+          background: #fff;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+          padding: 20px 17px;
+          margin-bottom: 20px;
+        }
 
-            @media (min-width: 120px) and (max-width: 767px) {
+        .metaverse {
+          border-radius: 12px;
+          border: 1px solid rgba(196, 196, 196, 0.5);
+          background: #fff;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+          padding: 20px 17px;
+          margin-bottom: 20px;
+        }
 
-.vision p {
-    color: #181A1F;
-    font-family: Lato;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 121%;
-    padding-top: 10px;
-}
+        .utility {
+          border-radius: 12px;
+          border: 1px solid rgba(196, 196, 196, 0.5);
+          background: #fff;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+          padding: 20px 17px;
+          margin-bottom: 20px;
+        }
+        .utility ul {
+          padding-left: 1rem;
+        }
 
-.community p {
-    color: #181A1F;
-    font-family: Lato;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 121%;
-    padding-top: 10px;
-}
+        .mint {
+          border-radius: 12px;
+          border: 1px solid rgba(196, 196, 196, 0.5);
+          background: #fff;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+          padding: 20px 17px;
+          margin-bottom: 20px;
+        }
+        .mint ul {
+          padding-left: 1rem;
+        }
 
-.metaverse p {
-    color: #181A1F;
-    font-family: Lato;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 121%;
-    padding-top: 10px;
-}
+        .foot {
+          position: inherit;
+          bottom: 0px;
+        }
+        .foot.roadmapfoot p {
+          color: #0144eb;
+          font-family: Lato;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 121%; /* 16.94px */
+        }
+        .roadmapfoot a {
+          text-decoration: none;
+        }
 
-.utility p {
-    color: #181A1F;
-    font-family: Lato;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 121%;
-    padding-top: 10px;
-}
+        .mobilehomecontent h4 {
+          color: #181a1f;
+          font-family: Lato;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 18%;
+          padding-bottom: 10px;
+          padding-top: 10px;
+        }
 
-.mint p {
-    color: #181A1F;
-    font-family: Lato;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 121%;
-    padding-top: 10px;
-}
+        .mobilehomecontent li {
+          color: #000000;
+          font-family: Lato;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 21px;
+        }
 
+        .mylight {
+          color: #181a1f;
+          font-family: Lato;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16%; /* 12.1px */
+          opacity: 0.5;
+        }
 
- .vision {
-    border-radius: 12px;
-    border: 1px solid rgba(196, 196, 196, 0.50);
-    background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    padding: 20px 17px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
+        .container-fluid.macbook {
+          display: none;
+        }
 
-.community {
-    border-radius: 12px;
-    border: 1px solid rgba(196, 196, 196, 0.50);
-    background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    padding: 20px 17px;
-    margin-bottom: 20px;
-}
+        .mobrow {
+          padding-top: 0px;
+        }
 
-.metaverse {
-    border-radius: 12px;
-    border: 1px solid rgba(196, 196, 196, 0.50);
-    background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    padding: 20px 17px;
-    margin-bottom: 20px;
-}
+        .container-fluid.col-container {
+          display: none;
+        }
 
-.utility {
-    border-radius: 12px;
-    border: 1px solid rgba(196, 196, 196, 0.50);
-    background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    padding: 20px 17px;
-    margin-bottom: 20px;
-}
-.utility ul{
-    padding-left: 1rem;
-}
+        .container.ctv {
+          display: none;
+        }
+      }
 
-.mint {
-    border-radius: 12px;
-    border: 1px solid rgba(196, 196, 196, 0.50);
-    background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    padding: 20px 17px;
-    margin-bottom: 20px;
-}
-.mint ul{
-    padding-left: 1rem;
-}
+      .col-container {
+        padding-top: clamp(90px, 6%, 140px);
+        /*    padding: 0px 50px;*/
+        display: flex;
+        width: 95%;
+      }
 
-                .foot {
-                    position: inherit;
-                    bottom: 0px;
-                }
-                .foot.roadmapfoot p {color: #0144EB;
-font-family: Lato;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 121%; /* 16.94px */
-                }
-                .roadmapfoot a {
-                    text-decoration: none;
-                }
+      .col-container .col {
+        border-radius: 14px;
+        border: 1px solid #c4c4c4;
+        background: #fff;
+        /*    padding: 50px 30px 30px 30px;*/
+        padding-top: 50px;
+        padding-bottom: 25px;
+        padding-left: clamp(30px, 2vw, 80px);
+        padding-right: clamp(30px, 2vw, 80px);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
 
-                .mobilehomecontent h4 {
-                    color: #181a1f;
-                    font-family: Lato;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 18%;
-                    padding-bottom: 10px;
-                    padding-top: 10px;
-                }
+      .boxes1 p,
+      .boxes2 p,
+      .boxes3 p,
+      .boxes4 li,
+      .boxes5 p,
+      .boxes5 li {
+        color: #181a1f;
+        text-align: center;
+        font-family: Lato;
+        /*font-size: 15px;*/
+        font-size: clamp(0.8rem, -0.2692rem + 1.1077vw, 2.5rem);
+        line-height: 130%;
+        font-style: normal;
+        font-weight: 400;
+      }
 
-                .mobilehomecontent li {
-                    color: #000000;
-                    font-family: Lato;
-                    font-size: 15px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 21px;
-                }
+      .boxes1 h4,
+      .boxes2 h4,
+      .boxes3 h4,
+      .boxes4 h4,
+      .boxes5 h4 {
+        color: #181a1f;
+        text-align: center;
+        font-family: Lato;
+        /*font-size: 15px;*/
+        font-size: clamp(1rem, -0.2692rem + 1.1077vw, 2.5rem);
+        /* line-height: 130%; */
+        font-style: normal;
+        font-weight: 700;
+        position: absolute;
+        top: 20;
+        left: 2;
+      }
 
-                .mylight {
-                    color: #181a1f;
-                    font-family: Lato;
-                    font-size: 10px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 16%; /* 12.1px */
-                    opacity: 0.5;
-                }
+      .boxes1,
+      .boxes2,
+      .boxes3,
+      .boxes4,
+      .boxes5 {
+        margin-top: clamp(0.5rem, -0.2692rem + 1.1077vw, 2.5rem);
+      }
 
-                .container-fluid.macbook {
-                    display: none;
-                }
+      .boxes4 p {
+        color: rgba(24, 26, 31, 0.5);
+        /* text-align: center; */
+        font-family: Lato;
+        font-size: clamp(0.73rem, -0.25rem + 0.8vw, 1.5rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: clamp(0.7rem, -0.25rem + 0.8vw, 1.5rem);
+      }
 
-                .mobrow {
-                    padding-top: 0px;
-                }
+      .boxes4 li,
+      .boxes5 li {
+        text-align: left;
+        list-style-type: disc;
+      }
 
-                .container-fluid.col-container {
-                   display: none;
-                }
+      .ctv p {
+        color: #0144eb;
+        font-family: Lato;
+        /* font-size: 16px; */
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
 
+        font-size: clamp(1rem, -0.2692rem + 1.1077vw, 2.5rem);
+      }
 
-.container.ctv{
-    display: none;
-}
-            }
+      .container.ctv {
+        padding-top: 30px;
+      }
 
-
-.col-container {
-    padding-top: clamp(90px, 6%, 140px);
-/*    padding: 0px 50px;*/
-    display: flex;
-    width: 95%;
-}
-
-
-
-.col-container .col {
-    border-radius: 14px;
-    border: 1px solid #C4C4C4;
-    background: #FFF;
-/*    padding: 50px 30px 30px 30px;*/
-padding-top:50px;
-padding-bottom: 25px;
-    padding-left: clamp(30px, 2vw, 80px);
-    padding-right: clamp(30px, 2vw, 80px);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-
-.boxes1 p, .boxes2 p, .boxes3 p, .boxes4 li, .boxes5 p, .boxes5 li{
-color: #181A1F;
-text-align: center;
-font-family: Lato;
-/*font-size: 15px;*/
-font-size: clamp(0.8rem, -0.2692rem + 1.1077vw, 2.5rem);
-line-height: 130%;
-font-style: normal;
-font-weight: 400;
-}
-
-.boxes1 h4, .boxes2 h4, .boxes3 h4, .boxes4 h4, .boxes5 h4 {
-color: #181A1F;
-text-align: center;
-font-family: Lato;
-/*font-size: 15px;*/
-font-size: clamp(1rem, -0.2692rem + 1.1077vw, 2.5rem);
-/* line-height: 130%; */
-font-style: normal;
-font-weight: 700;
-position: absolute;
-top:20;
-left:2;
-}
-
-.boxes1, .boxes2,.boxes3,.boxes4,.boxes5{
-    margin-top: clamp(0.5rem, -0.2692rem + 1.1077vw, 2.5rem);
-}
-
-
-.boxes4 p{
-    color: rgba(24, 26, 31, 0.50);
-/* text-align: center; */
-font-family: Lato;
-font-size: clamp(0.73rem, -0.2500rem + 0.8000vw, 1.5rem);
-font-style: normal;
-font-weight: 400;
-line-height: clamp(0.7rem, -0.2500rem + 0.8000vw, 1.5rem);
- 
-
- }
-
-.boxes4 li, .boxes5 li {
-    text-align: left;
-    list-style-type: disc;
-}
-
-.ctv p{
-    color: #0144EB;
-font-family: Lato;
-/* font-size: 16px; */
-font-style: normal;
-font-weight: 400;
-text-align: center;
-
-font-size: clamp(1rem, -0.2692rem + 1.1077vw, 2.5rem);
-}
-
-.container.ctv {
-    padding-top: 30px;
-}
-
-/*@media (min-width: 767px){
+      /*@media (min-width: 767px){
 .col-container .col {
     border-radius: 12px;
     border: 1px solid #C4C4C4;
@@ -347,463 +353,508 @@ font-size: clamp(1rem, -0.2692rem + 1.1077vw, 2.5rem);
 
 
 }*/
+    </style>
+    <style type="text/css">
+      .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+        max-width: 4600px;
+        margin: 0 auto;
+        width: 95%;
+        /*    padding: 20px;*/
+        padding: clamp(40px, 4%, 100px) 20px 20px;
+        box-sizing: border-box;
+      }
+      .box {
+        border: 1px solid #c4c4c4;
+        border-radius: 5px;
+        /*    padding: 20px;*/
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+      }
 
-       </style>
-       <style type="text/css">
-           .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    max-width: 4600px;
-    margin: 0 auto;
-    width: 95%;
-/*    padding: 20px;*/
-    padding: clamp(40px, 4%, 100px) 20px 20px;
-    box-sizing: border-box;
-}
-.box {
-   border: 1px solid #C4C4C4;
-   border-radius: 5px;
-/*    padding: 20px;*/
-    box-sizing: border-box;
-    box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset ;
-    
-    
+      .box ul {
+        margin: 0;
+        padding-left: clamp(10px, 1vw, 60px);
+        padding-right: clamp(10px, 1vw, 60px);
+        padding-top: clamp(30px, 2vw, 80px);
+        padding-bottom: clamp(30px, 2vw, 80px);
+      }
 
-}
+      .box ul li {
+        list-style: disc;
+      }
 
-.box ul{
-    margin:0;
-    padding-left: clamp(10px, 1vw, 60px);
-    padding-right: clamp(10px, 1vw, 60px);
-    padding-top: clamp(30px, 2vw, 80px);
-    padding-bottom: clamp(30px, 2vw, 80px);
-}
+      .box p {
+        margin: 0;
+        font-size: clamp(1rem, -0.5rem + 1.5vw, 3.5rem);
+        /*    font-size: clamp(1rem, 1vw, 3.5rem);*/
+        /*    font-size: clamp(0.5rem, -0.3462rem + 1.5385vw, 4rem);*/
+        line-height: clamp(0.5rem, -0.3462rem + 1.5385vw, 4rem);
+        /*    font-size: clamp(12px, 2vw, 26px);*/
+        padding-left: clamp(10px, 1vw, 60px);
+        padding-right: clamp(10px, 1vw, 60px);
+        padding-top: clamp(30px, 2vw, 80px);
+        padding-bottom: clamp(30px, 2vw, 80px);
+      }
 
-.box ul li{
-    list-style: disc;
-}
+      .container::before,
+      .container::after {
+        content: "";
+        width: 0;
+        grid-column: span 5;
+      }
+    </style>
+  </head>
 
-
-
-.box p {
-    margin: 0;
-    font-size: clamp(1rem, -0.5000rem + 1.5000vw, 3.5rem);
-/*    font-size: clamp(1rem, 1vw, 3.5rem);*/
-/*    font-size: clamp(0.5rem, -0.3462rem + 1.5385vw, 4rem);*/
-    line-height: clamp(0.5rem, -0.3462rem + 1.5385vw, 4rem);
-/*    font-size: clamp(12px, 2vw, 26px);*/
-    padding-left: clamp(10px, 1vw, 60px);
-    padding-right: clamp(10px, 1vw, 60px);
-    padding-top: clamp(30px, 2vw, 80px);
-    padding-bottom: clamp(30px, 2vw, 80px);
-}
-
-.container::before,
-.container::after {
-    content: "";
-    width: 0;
-    grid-column: span 5;
-}
-       </style>
-
-    </head>
-
-    <body>
-        <!-- Desktop-header -->
-        <div class="container-fluid header">
-            <div class="row">
-                <div class="col-1">
-                    <div class="logo">
-                        <h5>Phial</h5>
-                        <p>of Life</p>
-                    </div>
-                </div>
-
-                <div class="col-8">
-                    <div class="nav">
-                        <ul>
-                            <li><a href="index.html">Overview</a></li>
-                            <li><a href="roadmap.html" class="active">Roadmap</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="social">
-                        <ul>
-                            <li>
-                                <a href="https://www.instagram.com/phialoflife/" class="inst" target="_blank">
-                                    <span>
-                                        <!-- <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 40 40" fill="none">
-                                            <rect width="45" height="45" rx="4" fill="#C4C4C4" fill-opacity="0.8"/>
-                                            <path d="M25.26 19.6C25.26 17.05 23.1 15.01 20.4 15.01C17.7 15.01 15.54 17.05 15.54 19.6C15.54 22.15 17.7 24.19 20.4 24.19C23.1 24.19 25.26 22.15 25.26 19.6ZM27.78 19.6C27.78 23.51 24.54 26.57 20.4 26.57C16.26 26.57 13.02 23.51 13.02 19.6C13.02 15.69 16.26 12.63 20.4 12.63C24.54 12.63 27.78 15.69 27.78 19.6ZM29.76 12.29C29.76 13.31 29.04 13.99 27.96 13.99C26.88 13.99 26.16 13.31 26.16 12.29C26.16 11.27 26.88 10.59 27.96 10.59C29.04 10.59 29.76 11.44 29.76 12.29ZM20.4 8.38C18.24 8.38 13.74 8.21 11.94 8.89C10.68 9.4 9.6 10.42 9.24 11.61C8.52 13.31 8.7 17.56 8.7 19.6C8.7 21.64 8.52 25.89 9.24 27.59C9.6 28.78 10.68 29.8 11.94 30.14C13.74 30.82 18.42 30.65 20.4 30.65C22.38 30.65 27.06 30.82 28.86 30.14C30.12 29.63 31.02 28.78 31.56 27.59C32.28 25.72 32.1 21.47 32.1 19.6C32.1 17.73 32.28 13.31 31.56 11.61C31.2 10.42 30.12 9.4 28.86 9.06C27.06 8.21 22.56 8.38 20.4 8.38ZM34.8 19.6V25.21C34.8 27.25 34.08 29.29 32.46 30.99C30.84 32.52 28.68 33.2 26.34 33.2H14.46C12.3 33.2 10.14 32.52 8.34 30.99C6.9 29.46 6 27.42 6 25.21V13.99C6 11.78 6.9 9.74 8.34 8.21C10.14 6.85 12.3 6 14.46 6H26.34C28.5 6 30.66 6.68 32.46 8.21C33.9 9.74 34.8 11.78 34.8 13.99V19.6Z" fill="white"/>
-                                            </svg> -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="1.5 0 33 33" fill="none">
-                                            <path
-                                                d="M22.86 16.9999C22.86 14.4499 20.7 12.4099 18 12.4099C15.3 12.4099 13.14 14.4499 13.14 16.9999C13.14 19.5499 15.3 21.5899 18 21.5899C20.7 21.5899 22.86 19.5499 22.86 16.9999ZM25.38 16.9999C25.38 20.9099 22.14 23.9699 18 23.9699C13.86 23.9699 10.62 20.9099 10.62 16.9999C10.62 13.0899 13.86 10.0299 18 10.0299C22.14 10.0299 25.38 13.0899 25.38 16.9999ZM27.36 9.6899C27.36 10.7099 26.64 11.3899 25.56 11.3899C24.48 11.3899 23.76 10.7099 23.76 9.6899C23.76 8.6699 24.48 7.9899 25.56 7.9899C26.64 7.9899 27.36 8.8399 27.36 9.6899ZM18 5.7799C15.84 5.7799 11.34 5.6099 9.53998 6.2899C8.27998 6.7999 7.19998 7.8199 6.83998 9.0099C6.11998 10.7099 6.29998 14.9599 6.29998 16.9999C6.29998 19.0399 6.11998 23.2899 6.83998 24.9899C7.19998 26.1799 8.27998 27.1999 9.53998 27.5399C11.34 28.2199 16.02 28.0499 18 28.0499C19.98 28.0499 24.66 28.2199 26.46 27.5399C27.72 27.0299 28.62 26.1799 29.16 24.9899C29.88 23.1199 29.7 18.8699 29.7 16.9999C29.7 15.1299 29.88 10.7099 29.16 9.0099C28.8 7.8199 27.72 6.7999 26.46 6.4599C24.66 5.6099 20.16 5.7799 18 5.7799ZM32.4 16.9999V22.6099C32.4 24.6499 31.68 26.6899 30.06 28.3899C28.44 29.9199 26.28 30.5999 23.94 30.5999H12.06C9.89998 30.5999 7.73998 29.9199 5.93998 28.3899C4.49998 26.8599 3.59998 24.8199 3.59998 22.6099V11.3899C3.59998 9.1799 4.49998 7.1399 5.93998 5.6099C7.73998 4.2499 9.89998 3.3999 12.06 3.3999H23.94C26.1 3.3999 28.26 4.0799 30.06 5.6099C31.5 7.1399 32.4 9.1799 32.4 11.3899V16.9999Z"
-                                                fill="white"
-                                            />
-                                            
-                                        </svg>
-                                    </span>
-                                    
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/PhialofLife" class="twi" target="_blank">
-                                    <span>
-                                        <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                
-                                            <g transform="translate(3, 15)">
-                                                <path d="M18.901 -10.8467H22.581L14.541 -1.65668L24 10.8467H16.594L10.794 3.26268L4.156 10.8467H0.474L9.074 0.0167236L0 -11.8453H7.594L12.837 -4.91327L18.901 -11.8463ZM17.61 8.79723H19.649L6.486 -8.60628H4.298L17.61 8.79723Z" fill="white"/>
-                                              </g>    
-                                        </svg>
-                                            
-                                    
-                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-                                            <path d="M18.901 1.15332H22.581L14.541 10.3433L24 22.8463H16.594L10.794 15.2623L4.156 22.8463H0.474L9.074 13.0163L0 1.15432H7.594L12.837 8.08632L18.901 1.15332ZM17.61 20.6443H19.649L6.486 3.24032H4.298L17.61 20.6443Z" fill="white"/>
-                                          </svg> -->
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://discord.com/invite/DVC57T7k" class="dis" target="_blank">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" fill="none">
-                                            <path
-                                                d="M23.2846 6.44063C21.6775 5.69147 19.9375 5.14772 18.125 4.83355C18.1091 4.83304 18.0933 4.83603 18.0787 4.84229C18.0641 4.84855 18.051 4.85794 18.0404 4.8698C17.8229 5.26855 17.5691 5.78813 17.4 6.18688C15.4775 5.89688 13.5224 5.89688 11.6 6.18688C11.4308 5.77605 11.1771 5.26855 10.9475 4.8698C10.9354 4.84564 10.8991 4.83355 10.8629 4.83355C9.0504 5.14772 7.32248 5.69147 5.70331 6.44063C5.69123 6.44063 5.67915 6.45272 5.66706 6.4648C2.3804 11.3827 1.47415 16.1677 1.92123 20.9044C1.92123 20.9286 1.93331 20.9527 1.95748 20.9648C4.13248 22.5598 6.2229 23.5265 8.28915 24.1669C8.3254 24.179 8.36165 24.1669 8.37373 24.1427C8.85706 23.4781 9.29206 22.7773 9.66665 22.0402C9.69081 21.9919 9.66665 21.9436 9.61831 21.9315C8.92956 21.6656 8.27706 21.3515 7.63665 20.989C7.58831 20.9648 7.58831 20.8923 7.62456 20.8561C7.75748 20.7594 7.8904 20.6506 8.02331 20.554C8.04748 20.5298 8.08373 20.5298 8.1079 20.5419C12.2646 22.439 16.7475 22.439 20.8558 20.5419C20.88 20.5298 20.9162 20.5298 20.9404 20.554C21.0733 20.6627 21.2062 20.7594 21.3391 20.8681C21.3875 20.9044 21.3875 20.9769 21.3271 21.0011C20.6987 21.3756 20.0341 21.6777 19.3454 21.9436C19.2971 21.9556 19.285 22.0161 19.2971 22.0523C19.6837 22.7894 20.1187 23.4902 20.59 24.1548C20.6262 24.1669 20.6625 24.179 20.6987 24.1669C22.7771 23.5265 24.8675 22.5598 27.0425 20.9648C27.0666 20.9527 27.0787 20.9286 27.0787 20.9044C27.6104 15.4306 26.1966 10.6819 23.3329 6.4648C23.3208 6.45272 23.3087 6.44063 23.2846 6.44063ZM10.295 18.0165C9.0504 18.0165 8.01123 16.8686 8.01123 15.4548C8.01123 14.0411 9.02623 12.8931 10.295 12.8931C11.5758 12.8931 12.5908 14.0531 12.5787 15.4548C12.5787 16.8686 11.5637 18.0165 10.295 18.0165ZM18.7171 18.0165C17.4725 18.0165 16.4333 16.8686 16.4333 15.4548C16.4333 14.0411 17.4483 12.8931 18.7171 12.8931C19.9979 12.8931 21.0129 14.0531 21.0008 15.4548C21.0008 16.8686 19.9979 18.0165 18.7171 18.0165Z"
-                                                fill="white"
-                                            />
-                                        </svg>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://opensea.com/invite/DVC57T7k" class="ope" target="_blank">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="none">
-                                            <g clip-path="url(#clip0_434_131)">
-                                                <path
-                                                    d="M13.0208 0C6.4063 0 1.04163 5.36467 1.04163 11.9792C1.04163 18.5937 6.4063 23.9583 13.0208 23.9583C19.6353 23.9583 25 18.5937 25 11.9792C25 5.36467 19.6383 0 13.0208 0ZM6.95135 12.3815L7.00226 12.3006L10.1198 7.42509C10.1303 7.40906 10.1448 7.39613 10.162 7.38765C10.1791 7.37917 10.1982 7.37545 10.2173 7.37688C10.2364 7.37831 10.2547 7.38483 10.2704 7.39577C10.2861 7.40671 10.2986 7.42166 10.3065 7.43906C10.8256 8.60603 11.2768 10.0575 11.0652 10.9609C10.9773 11.3323 10.7308 11.8354 10.4523 12.3006C10.4165 12.3687 10.3776 12.435 10.3355 12.4993C10.3254 12.5136 10.3119 12.5252 10.2962 12.5331C10.2805 12.5409 10.2631 12.5447 10.2456 12.5442H7.04419C7.02508 12.5445 7.00625 12.5396 6.98969 12.53C6.97314 12.5205 6.95947 12.5066 6.95016 12.49C6.94084 12.4733 6.93622 12.4544 6.93678 12.4353C6.93734 12.4162 6.94307 12.3976 6.95335 12.3815H6.95135ZM20.8412 14.0586C20.8414 14.0799 20.8354 14.1008 20.8239 14.1187C20.8124 14.1366 20.7958 14.1508 20.7763 14.1594C20.5337 14.2622 19.7082 14.6435 19.3648 15.1197C18.4883 16.3396 17.8194 18.0845 16.3221 18.0845H10.0789C9.55179 18.0838 9.02999 17.9791 8.54334 17.7766C8.05668 17.574 7.61471 17.2776 7.24267 16.9042C6.87064 16.5307 6.57584 16.0877 6.37512 15.6003C6.1744 15.1128 6.0717 14.5907 6.07288 14.0635V13.9917C6.07288 13.9338 6.12079 13.8859 6.18069 13.8859H9.65964C9.72952 13.8859 9.77943 13.9487 9.77444 14.0176C9.74848 14.2432 9.79141 14.4758 9.89922 14.6865C10.1049 15.1057 10.5341 15.3673 10.9963 15.3673H12.7193V14.0226H11.0143C10.9943 14.0224 10.9748 14.0167 10.9578 14.0062C10.9408 13.9957 10.9269 13.9808 10.9178 13.963C10.9087 13.9453 10.9045 13.9254 10.9059 13.9054C10.9072 13.8855 10.914 13.8663 10.9254 13.8499L10.9883 13.7601C11.1481 13.5295 11.3786 13.1751 11.6082 12.7698C11.764 12.4963 11.9157 12.2048 12.0375 11.9113C12.0615 11.8594 12.0804 11.8045 12.1024 11.7516C12.1353 11.6577 12.1693 11.5699 12.1932 11.483C12.2167 11.4094 12.2384 11.3352 12.2581 11.2604C12.315 11.0109 12.339 10.7473 12.339 10.4748C12.339 10.367 12.335 10.2542 12.325 10.1484C12.32 10.0316 12.305 9.91376 12.2911 9.79696C12.2799 9.69246 12.2639 9.58853 12.2431 9.4855C12.2163 9.32863 12.1836 9.17279 12.1453 9.01832L12.1313 8.95842C12.1014 8.85061 12.0754 8.74879 12.0415 8.64197C11.9464 8.31395 11.8372 7.99021 11.7141 7.67166C11.6712 7.55184 11.6239 7.43363 11.5723 7.31728C11.5004 7.13958 11.4266 6.97886 11.3597 6.82813C11.3264 6.76355 11.2951 6.69796 11.2658 6.63147C11.2334 6.55973 11.1991 6.48883 11.163 6.41884C11.1391 6.36593 11.1101 6.31502 11.0911 6.2671L10.8805 5.87977C10.8516 5.82687 10.8995 5.76198 10.9574 5.77895L12.2751 6.13533H12.2851L12.4578 6.18524L12.6494 6.23915L12.7193 6.25812V5.47648C12.7193 5.09813 13.0208 4.79167 13.3971 4.79167C13.486 4.79143 13.574 4.80917 13.6558 4.84382C13.7377 4.87848 13.8116 4.92933 13.8733 4.99332C14.0008 5.12187 14.0725 5.29544 14.073 5.47648V6.63846L14.2137 6.67739C14.2237 6.68238 14.2357 6.68737 14.2447 6.69436C14.2786 6.71832 14.3285 6.75625 14.3914 6.80417C14.4413 6.8421 14.4942 6.89002 14.5561 6.94093C14.7532 7.10153 14.9444 7.26935 15.1291 7.44405C15.3428 7.64271 15.5823 7.8753 15.8119 8.13385C15.8768 8.20773 15.9387 8.2796 16.0036 8.35946C16.0655 8.43832 16.1354 8.51519 16.1933 8.59106C16.2721 8.69488 16.353 8.80269 16.4279 8.9145C16.4608 8.96741 16.5017 9.02231 16.5327 9.07522C16.6285 9.21697 16.7104 9.36272 16.7892 9.50946C16.8232 9.57635 16.8561 9.65022 16.8851 9.72209C16.9739 9.91875 17.0438 10.1174 17.0867 10.3191C17.1009 10.3619 17.1106 10.406 17.1157 10.4508V10.4608C17.1296 10.5177 17.1346 10.5806 17.1396 10.6445C17.1677 10.9395 17.1316 11.2372 17.0338 11.517C17.0029 11.6008 16.9739 11.6867 16.936 11.7705C16.8611 11.9402 16.7753 12.1129 16.6724 12.2717C16.6385 12.3316 16.5976 12.3934 16.5596 12.4533C16.5167 12.5162 16.4708 12.5761 16.4329 12.633C16.378 12.7086 16.3204 12.7822 16.2602 12.8536C16.2073 12.9255 16.1543 12.9974 16.0944 13.0623C16.0136 13.1601 15.9347 13.252 15.8499 13.3398C15.802 13.3977 15.75 13.4576 15.6941 13.5095C15.6422 13.5694 15.5863 13.6223 15.5384 13.6702C15.4546 13.7541 15.3887 13.817 15.3308 13.8719L15.194 13.9937C15.175 14.0128 15.1491 14.0235 15.1221 14.0236H14.073V15.3673H15.3927C15.6872 15.3673 15.9677 15.2635 16.1953 15.0698C16.2721 15.0029 16.6096 14.7104 17.0099 14.2692C17.0229 14.2542 17.0404 14.2437 17.0598 14.2392L20.7034 13.1841C20.7194 13.1794 20.7363 13.1786 20.7527 13.1816C20.7691 13.1845 20.7845 13.1913 20.7979 13.2012C20.8112 13.2112 20.8221 13.2241 20.8296 13.239C20.8371 13.2538 20.8411 13.2702 20.8412 13.2869V14.0586Z"
-                                                    fill="white"
-                                                />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_434_131">
-                                                    <rect width="25" height="25" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <body>
+    <!-- Desktop-header -->
+    <div class="container-fluid header">
+      <div class="row">
+        <div class="col-1">
+          <div class="logo">
+            <h5>Phial</h5>
+            <p>of Life</p>
+          </div>
         </div>
-        <!-- Desktop-header-closed -->
 
-        <!-- Desktop Body -->
+        <div class="col-8">
+          <div class="nav">
+            <ul>
+              <li><a tabindex="1" href="index.html">Overview</a></li>
+              <li>
+                <a tabindex="2" class="active" href="roadmap.html">Roadmap</a>
+              </li>
+              <li><a tabindex="3" href="team.html">Team</a></li>
+              <li><a tabindex="4" href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
 
-        
+        <div class="col-3">
+          <div class="social">
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/phialoflife/"
+                  class="inst focused"
+                  target="_blank"
+                  tabindex="5"
+                >
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="1.5 0 33 33"
+                      fill="none"
+                    >
+                      <path
+                        d="M22.86 16.9999C22.86 14.4499 20.7 12.4099 18 12.4099C15.3 12.4099 13.14 14.4499 13.14 16.9999C13.14 19.5499 15.3 21.5899 18 21.5899C20.7 21.5899 22.86 19.5499 22.86 16.9999ZM25.38 16.9999C25.38 20.9099 22.14 23.9699 18 23.9699C13.86 23.9699 10.62 20.9099 10.62 16.9999C10.62 13.0899 13.86 10.0299 18 10.0299C22.14 10.0299 25.38 13.0899 25.38 16.9999ZM27.36 9.6899C27.36 10.7099 26.64 11.3899 25.56 11.3899C24.48 11.3899 23.76 10.7099 23.76 9.6899C23.76 8.6699 24.48 7.9899 25.56 7.9899C26.64 7.9899 27.36 8.8399 27.36 9.6899ZM18 5.7799C15.84 5.7799 11.34 5.6099 9.53998 6.2899C8.27998 6.7999 7.19998 7.8199 6.83998 9.0099C6.11998 10.7099 6.29998 14.9599 6.29998 16.9999C6.29998 19.0399 6.11998 23.2899 6.83998 24.9899C7.19998 26.1799 8.27998 27.1999 9.53998 27.5399C11.34 28.2199 16.02 28.0499 18 28.0499C19.98 28.0499 24.66 28.2199 26.46 27.5399C27.72 27.0299 28.62 26.1799 29.16 24.9899C29.88 23.1199 29.7 18.8699 29.7 16.9999C29.7 15.1299 29.88 10.7099 29.16 9.0099C28.8 7.8199 27.72 6.7999 26.46 6.4599C24.66 5.6099 20.16 5.7799 18 5.7799ZM32.4 16.9999V22.6099C32.4 24.6499 31.68 26.6899 30.06 28.3899C28.44 29.9199 26.28 30.5999 23.94 30.5999H12.06C9.89998 30.5999 7.73998 29.9199 5.93998 28.3899C4.49998 26.8599 3.59998 24.8199 3.59998 22.6099V11.3899C3.59998 9.1799 4.49998 7.1399 5.93998 5.6099C7.73998 4.2499 9.89998 3.3999 12.06 3.3999H23.94C26.1 3.3999 28.26 4.0799 30.06 5.6099C31.5 7.1399 32.4 9.1799 32.4 11.3899V16.9999Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/PhialofLife"
+                  class="twi focused"
+                  target="_blank"
+                  tabindex="6"
+                >
+                  <span>
+                    <svg
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g transform="translate(3, 15)">
+                        <path
+                          d="M18.901 -10.8467H22.581L14.541 -1.65668L24 10.8467H16.594L10.794 3.26268L4.156 10.8467H0.474L9.074 0.0167236L0 -11.8453H7.594L12.837 -4.91327L18.901 -11.8463ZM17.61 8.79723H19.649L6.486 -8.60628H4.298L17.61 8.79723Z"
+                          fill="white"
+                        />
+                      </g>
+                    </svg>
 
-<div class="container-fluid col-container">
-  <div class="col">
-    <div class="boxes1">
-        <h4>Vision</h4>
-                        <p>We are your neighbors, we are gifted with insights that will elevate your health and well-being to new realms. We want to take you on this journey with us.</p>
-                    </div>
-  </div>
-
-  <div class="col">
-    <div class="boxes2">
-        <h4>Community</h4>
-                        <p>
-                                    We are building a health and well-being based community that extends to all walks of life. Our community moderators are gifted with insights that will empower our members with the mindset to ascend into
-                                    new realms in health and well-being.
-                                </p>
-                    </div>
-  </div>
-
-  <div class="col">
-    <div class="boxes3">
-        <h4>Metaverse</h4>
-                        <p>In an effort to spread the insights that we have acquired from another realm of life, we are bringing PhialofLife NFT project to the Metaverse.</p>
-                    </div>
-  </div>
-  
-  <div class="col">
-     <div class="boxes4">
-        <h4>Utility</h4>
-                        <ul>
-                                    <li>Voting rights</li>
-                                    <li>Metaverse health & well-being community</li>
-                                    <li>In-person health & well-being  conferences</li>
-                                    <li>Product launch that will align with project and benefit the community</li>
-                                </ul>
-                                <p>Before product launch, we will assess our community to ensure that our product choice brings value to our NFT holders. Members with voting rights will have a say in product choice and launch.</p>
-                    </div>
-  </div>
-  
-  <div class="col">
-    
-    <div class="boxes5">
-        <h4>Mint</h4>
-                                <p>OpenSea DROP (public sale) on Jan. 10 @ 9:00 am PDT.</p>
-                                <ul>
-                                    <li><span style="font-weight: 600;">Phase 1:</span>1K NFT for sale</li>
-                                    <li><span style="font-weight: 600;">Phase 2:</span>4k NFT for sale </li>
-                                    <li><span style="font-weight: 600;">Phase 3:</span>5k NFT for sale </li>
-                                </ul>
-                    </div>
-  </div>
-</div> 
-
-<div class="container ctv">
-    <div class="col">
-        <p>View PhialofLife Whitepaper</p>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path d="M18.901 1.15332H22.581L14.541 10.3433L24 22.8463H16.594L10.794 15.2623L4.156 22.8463H0.474L9.074 13.0163L0 1.15432H7.594L12.837 8.08632L18.901 1.15332ZM17.61 20.6443H19.649L6.486 3.24032H4.298L17.61 20.6443Z" fill="white"/>
+                                  </svg> -->
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://discord.com/invite/DVC57T7k"
+                  class="dis focused"
+                  target="_blank"
+                  tabindex="7"
+                >
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 29 29"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.2846 6.44063C21.6775 5.69147 19.9375 5.14772 18.125 4.83355C18.1091 4.83304 18.0933 4.83603 18.0787 4.84229C18.0641 4.84855 18.051 4.85794 18.0404 4.8698C17.8229 5.26855 17.5691 5.78813 17.4 6.18688C15.4775 5.89688 13.5224 5.89688 11.6 6.18688C11.4308 5.77605 11.1771 5.26855 10.9475 4.8698C10.9354 4.84564 10.8991 4.83355 10.8629 4.83355C9.0504 5.14772 7.32248 5.69147 5.70331 6.44063C5.69123 6.44063 5.67915 6.45272 5.66706 6.4648C2.3804 11.3827 1.47415 16.1677 1.92123 20.9044C1.92123 20.9286 1.93331 20.9527 1.95748 20.9648C4.13248 22.5598 6.2229 23.5265 8.28915 24.1669C8.3254 24.179 8.36165 24.1669 8.37373 24.1427C8.85706 23.4781 9.29206 22.7773 9.66665 22.0402C9.69081 21.9919 9.66665 21.9436 9.61831 21.9315C8.92956 21.6656 8.27706 21.3515 7.63665 20.989C7.58831 20.9648 7.58831 20.8923 7.62456 20.8561C7.75748 20.7594 7.8904 20.6506 8.02331 20.554C8.04748 20.5298 8.08373 20.5298 8.1079 20.5419C12.2646 22.439 16.7475 22.439 20.8558 20.5419C20.88 20.5298 20.9162 20.5298 20.9404 20.554C21.0733 20.6627 21.2062 20.7594 21.3391 20.8681C21.3875 20.9044 21.3875 20.9769 21.3271 21.0011C20.6987 21.3756 20.0341 21.6777 19.3454 21.9436C19.2971 21.9556 19.285 22.0161 19.2971 22.0523C19.6837 22.7894 20.1187 23.4902 20.59 24.1548C20.6262 24.1669 20.6625 24.179 20.6987 24.1669C22.7771 23.5265 24.8675 22.5598 27.0425 20.9648C27.0666 20.9527 27.0787 20.9286 27.0787 20.9044C27.6104 15.4306 26.1966 10.6819 23.3329 6.4648C23.3208 6.45272 23.3087 6.44063 23.2846 6.44063ZM10.295 18.0165C9.0504 18.0165 8.01123 16.8686 8.01123 15.4548C8.01123 14.0411 9.02623 12.8931 10.295 12.8931C11.5758 12.8931 12.5908 14.0531 12.5787 15.4548C12.5787 16.8686 11.5637 18.0165 10.295 18.0165ZM18.7171 18.0165C17.4725 18.0165 16.4333 16.8686 16.4333 15.4548C16.4333 14.0411 17.4483 12.8931 18.7171 12.8931C19.9979 12.8931 21.0129 14.0531 21.0008 15.4548C21.0008 16.8686 19.9979 18.0165 18.7171 18.0165Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://opensea.com/invite/DVC57T7k"
+                  class="ope focused"
+                  target="_blank"
+                  tabindex="8"
+                >
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_434_131)">
+                        <path
+                          d="M13.0208 0C6.4063 0 1.04163 5.36467 1.04163 11.9792C1.04163 18.5937 6.4063 23.9583 13.0208 23.9583C19.6353 23.9583 25 18.5937 25 11.9792C25 5.36467 19.6383 0 13.0208 0ZM6.95135 12.3815L7.00226 12.3006L10.1198 7.42509C10.1303 7.40906 10.1448 7.39613 10.162 7.38765C10.1791 7.37917 10.1982 7.37545 10.2173 7.37688C10.2364 7.37831 10.2547 7.38483 10.2704 7.39577C10.2861 7.40671 10.2986 7.42166 10.3065 7.43906C10.8256 8.60603 11.2768 10.0575 11.0652 10.9609C10.9773 11.3323 10.7308 11.8354 10.4523 12.3006C10.4165 12.3687 10.3776 12.435 10.3355 12.4993C10.3254 12.5136 10.3119 12.5252 10.2962 12.5331C10.2805 12.5409 10.2631 12.5447 10.2456 12.5442H7.04419C7.02508 12.5445 7.00625 12.5396 6.98969 12.53C6.97314 12.5205 6.95947 12.5066 6.95016 12.49C6.94084 12.4733 6.93622 12.4544 6.93678 12.4353C6.93734 12.4162 6.94307 12.3976 6.95335 12.3815H6.95135ZM20.8412 14.0586C20.8414 14.0799 20.8354 14.1008 20.8239 14.1187C20.8124 14.1366 20.7958 14.1508 20.7763 14.1594C20.5337 14.2622 19.7082 14.6435 19.3648 15.1197C18.4883 16.3396 17.8194 18.0845 16.3221 18.0845H10.0789C9.55179 18.0838 9.02999 17.9791 8.54334 17.7766C8.05668 17.574 7.61471 17.2776 7.24267 16.9042C6.87064 16.5307 6.57584 16.0877 6.37512 15.6003C6.1744 15.1128 6.0717 14.5907 6.07288 14.0635V13.9917C6.07288 13.9338 6.12079 13.8859 6.18069 13.8859H9.65964C9.72952 13.8859 9.77943 13.9487 9.77444 14.0176C9.74848 14.2432 9.79141 14.4758 9.89922 14.6865C10.1049 15.1057 10.5341 15.3673 10.9963 15.3673H12.7193V14.0226H11.0143C10.9943 14.0224 10.9748 14.0167 10.9578 14.0062C10.9408 13.9957 10.9269 13.9808 10.9178 13.963C10.9087 13.9453 10.9045 13.9254 10.9059 13.9054C10.9072 13.8855 10.914 13.8663 10.9254 13.8499L10.9883 13.7601C11.1481 13.5295 11.3786 13.1751 11.6082 12.7698C11.764 12.4963 11.9157 12.2048 12.0375 11.9113C12.0615 11.8594 12.0804 11.8045 12.1024 11.7516C12.1353 11.6577 12.1693 11.5699 12.1932 11.483C12.2167 11.4094 12.2384 11.3352 12.2581 11.2604C12.315 11.0109 12.339 10.7473 12.339 10.4748C12.339 10.367 12.335 10.2542 12.325 10.1484C12.32 10.0316 12.305 9.91376 12.2911 9.79696C12.2799 9.69246 12.2639 9.58853 12.2431 9.4855C12.2163 9.32863 12.1836 9.17279 12.1453 9.01832L12.1313 8.95842C12.1014 8.85061 12.0754 8.74879 12.0415 8.64197C11.9464 8.31395 11.8372 7.99021 11.7141 7.67166C11.6712 7.55184 11.6239 7.43363 11.5723 7.31728C11.5004 7.13958 11.4266 6.97886 11.3597 6.82813C11.3264 6.76355 11.2951 6.69796 11.2658 6.63147C11.2334 6.55973 11.1991 6.48883 11.163 6.41884C11.1391 6.36593 11.1101 6.31502 11.0911 6.2671L10.8805 5.87977C10.8516 5.82687 10.8995 5.76198 10.9574 5.77895L12.2751 6.13533H12.2851L12.4578 6.18524L12.6494 6.23915L12.7193 6.25812V5.47648C12.7193 5.09813 13.0208 4.79167 13.3971 4.79167C13.486 4.79143 13.574 4.80917 13.6558 4.84382C13.7377 4.87848 13.8116 4.92933 13.8733 4.99332C14.0008 5.12187 14.0725 5.29544 14.073 5.47648V6.63846L14.2137 6.67739C14.2237 6.68238 14.2357 6.68737 14.2447 6.69436C14.2786 6.71832 14.3285 6.75625 14.3914 6.80417C14.4413 6.8421 14.4942 6.89002 14.5561 6.94093C14.7532 7.10153 14.9444 7.26935 15.1291 7.44405C15.3428 7.64271 15.5823 7.8753 15.8119 8.13385C15.8768 8.20773 15.9387 8.2796 16.0036 8.35946C16.0655 8.43832 16.1354 8.51519 16.1933 8.59106C16.2721 8.69488 16.353 8.80269 16.4279 8.9145C16.4608 8.96741 16.5017 9.02231 16.5327 9.07522C16.6285 9.21697 16.7104 9.36272 16.7892 9.50946C16.8232 9.57635 16.8561 9.65022 16.8851 9.72209C16.9739 9.91875 17.0438 10.1174 17.0867 10.3191C17.1009 10.3619 17.1106 10.406 17.1157 10.4508V10.4608C17.1296 10.5177 17.1346 10.5806 17.1396 10.6445C17.1677 10.9395 17.1316 11.2372 17.0338 11.517C17.0029 11.6008 16.9739 11.6867 16.936 11.7705C16.8611 11.9402 16.7753 12.1129 16.6724 12.2717C16.6385 12.3316 16.5976 12.3934 16.5596 12.4533C16.5167 12.5162 16.4708 12.5761 16.4329 12.633C16.378 12.7086 16.3204 12.7822 16.2602 12.8536C16.2073 12.9255 16.1543 12.9974 16.0944 13.0623C16.0136 13.1601 15.9347 13.252 15.8499 13.3398C15.802 13.3977 15.75 13.4576 15.6941 13.5095C15.6422 13.5694 15.5863 13.6223 15.5384 13.6702C15.4546 13.7541 15.3887 13.817 15.3308 13.8719L15.194 13.9937C15.175 14.0128 15.1491 14.0235 15.1221 14.0236H14.073V15.3673H15.3927C15.6872 15.3673 15.9677 15.2635 16.1953 15.0698C16.2721 15.0029 16.6096 14.7104 17.0099 14.2692C17.0229 14.2542 17.0404 14.2437 17.0598 14.2392L20.7034 13.1841C20.7194 13.1794 20.7363 13.1786 20.7527 13.1816C20.7691 13.1845 20.7845 13.1913 20.7979 13.2012C20.8112 13.2112 20.8221 13.2241 20.8296 13.239C20.8371 13.2538 20.8411 13.2702 20.8412 13.2869V14.0586Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_434_131">
+                          <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+    <!-- Desktop-header-closed -->
 
+    <!-- Desktop Body -->
 
- <!-- 
-         <section class="boxsection">
-            <div class="container-fluid macbook">
-                <div class="row mobrow">
-                    <div class="col">
-                        <div class="box box1">
-                            <div class="front">
-                                <button onclick="flipBox(1)" class="flip1 resizable-button">Vision</button>
-                            </div>
-                            <div class="back">
-                                <p>We are your neighbors, we are gifted with insights that will elevate your health and well-being to new realms. We want to take you on this journey with us.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="box box2">
-                            <div class="front">
-                                <button onclick="flipBox(2)" class="flip1 resizable-button">Community</button>
-                            </div>
-                            <div class="back">
-                                <p>
-                                    We are building a health and well-being based community that extends to all walks of life. Our community moderators are gifted with insights that will empower our members with the mindset to ascend into
-                                    new realms in health and well-being.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="box box3">
-                            <div class="front">
-                                <button onclick="flipBox(3)" class="flip1 resizable-button">Metaverse</button>
-                            </div>
-                            <div class="back">
-                                <p>In an effort to spread the insights that we have acquired from another realm of life, we are bringing PhialofLife NFT project to the Metaverse.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="box box4">
-                            <div class="front">
-                                <button onclick="flipBox(4)" class="flip1 resizable-button">Utility</button>
-                            </div>
-                            <div class="back">
-                                <p>Before product launch, we will assess our community to ensure that our product choice brings value to our NFT holders. Members with voting rights will have a say in product choice and launch.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="box box5">
-                            <div class="front">
-                                <button onclick="flipBox(5)" class="flip1 resizable-button">Mint</button>
-                            </div>
-                            <div class="back">
-                                <p>OpenSea DROP (public sale) on Oct. 10 @ 9:00 am PDT.</p>
-                                <ul>
-                                    <li>Phase 1: 1K NFT for sale</li>
-                                    <li>Phase 2: 4k NFT for sale</li>
-                                    <li>Phase 3: 5k NFT for sale</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-  -->
-         <!-- Desktop Body Closed -->
-
-        <!-- Mobile Header -->
-        <div class="mobile-container">
-            <div class="container menumobile">
-                <div class="row">
-                    <div class="col-md-6 sideright">
-                        <div class="logo">
-                            <a href="index.html" class="bth">Phial</a>
-                            <a href="index.html" class="bth2">of Life</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 sideright">
-                        <div id="mySidenav" class="sidenav">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <a href="index.html" class="bth3">Phial</a>
-                                    <a href="index.html" class="bth4">of Life</a>
-                                </div>
-                                <div class="col-md-6">
-                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                </div>
-                            </div>
-                            <div class="sidenavmobile">
-                                <ul>
-                                    <li>
-                                        <a href="index.html">Overview</a>
-                                    </li>
-                                    <li>
-                                        <a href="gallery.html">Gallery</a>
-                                    </li>
-                                    <li>
-                                        <a href="roadmap.html">Roadmap</a>
-                                    </li>
-                                    <li>
-                                        <a href="team.html">Team</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/phialoflife/" target="_blank">
-                                            <span>Instagram<img src="assets/images/instagram.svg" class="ins" /></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/PhialofLife" target="_blank">
-                                            <span>Twitter<img src="assets/images/twitter.svg" class="twiside" /></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://discord.com/invite/DVC57T7k" target="_blank">
-                                            <span>Discord<img src="assets/images/discord.svg" class="disside" /></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://discord.com/invite/DVC57T7k" target="_blank">
-                                            <span>Visit us on OpenSea<img src="assets/images/opensea.svg" class="openside" /></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <span class="threelines" style="font-size: 30px; cursor: pointer;" onclick="openNav()">&#9776;</span>
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid col-container">
+      <div class="col">
+        <div class="boxes1">
+          <h4>Vision</h4>
+          <p>
+            We are your neighbors, we are gifted with insights that will elevate
+            your health and well-being to new realms. We want to take you on
+            this journey with us.
+          </p>
         </div>
-        <!-- Mobile Header Closed -->
+      </div>
 
-        <!-- Mobile Body -->
-        <div class="container mobilehomecontent">
-            <div class="row">
-                <div class="col">
-                    <h3>Roadmap</h3>
-                    <div class="home-line"></div>
-                    <div class="foot roadmapfoot">
-                        <a href="#"><p>View PhialofLife Whitepaper</p></a>
-                    </div>
-                        <div class="vision">
-                    <h4>Vision</h4>
-                    <p>We are your neighbors, we are gifted with insights that will elevate your health and well-being to new realms. We want to take you on this journey with us.</p>
-                        </div>
-                        <div class="community">
-                    <h4>Community</h4>
-                    <p>
-                        We are building a health and well-being based community that extends to all walk of life. Our community moderators are gifted with insights that will empower our members with the mindset to ascend into new realms in
-                        health and well-being.
-                    </p>
-                </div>
-                    <div class="metaverse">
-                    <h4>Metaverse</h4>
-                    <p>In an effort to spread the insights that we have acquired from another realm of life, we are bringing PhialofLife NFT project to the Metaverse.</p>
-                </div>
-                <div class="utility">
-                    <h4>Utility</h4>
-                    <ul>
-                        <li>• Voting rights</li>
-                        <li>• Metaverse health & well-being community</li>
-                        <li>• In-person health & well-being conferences</li>
-                        <li>• Product launch that will align with project and benefit the community</li>
-                    </ul>
-                    <p class="mylight">Before product launch, we will assess our community to ensure that our product choice brings value to our NFT holders. Members with voting rights will have a say in product choice and launch.</p>
-                </div>
-                <div class="mint">
-                    <h4>Mint</h4>
-                    <p>OpenSea DROP (public sale) on Jan. 10 @ 9:00 am PDT.
-                    </p>
-                    <ul>
-                        <li><span style="font-weight: 700;">• Phase 1:</span> 1K NFT for sale</li>
-                        <li><span style="font-weight: 700;">• Phase 2:</span> 4k NFT for sale</li>
-                        <li><span style="font-weight: 700;">• Phase 3:</span> 5k NFT for sale</li>
-                    </ul>
-                    
-                </div>
-                </div>
-            </div>
+      <div class="col">
+        <div class="boxes2">
+          <h4>Community</h4>
+          <p>
+            We are building a health and well-being based community that extends
+            to all walks of life. Our community moderators are gifted with
+            insights that will empower our members with the mindset to ascend
+            into new realms in health and well-being.
+          </p>
         </div>
-        <!-- Mobile Body Closed -->
+      </div>
 
-        <script src="assets/js/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="assets/js/slick.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
-        <script type="text/javascript" src="assets/js/wow.js"></script>
-        <script type="text/javascript" src="assets/js/functions.js"></script>
-        <script>
-            setTimeout(function () {
-                $(".beelicious-loader-wrap").fadeOut("fast");
-            }, 2500); // <-- time in milliseconds
+      <div class="col">
+        <div class="boxes3">
+          <h4>Metaverse</h4>
+          <p>
+            In an effort to spread the insights that we have acquired from
+            another realm of life, we are bringing PhialofLife NFT project to
+            the Metaverse.
+          </p>
+        </div>
+      </div>
 
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "100%";
-            }
+      <div class="col">
+        <div class="boxes4">
+          <h4>Utility</h4>
+          <ul>
+            <li>Voting rights</li>
+            <li>Metaverse health & well-being community</li>
+            <li>In-person health & well-being conferences</li>
+            <li>
+              Product launch that will align with project and benefit the
+              community
+            </li>
+          </ul>
+          <p>
+            Before product launch, we will assess our community to ensure that
+            our product choice brings value to our NFT holders. Members with
+            voting rights will have a say in product choice and launch.
+          </p>
+        </div>
+      </div>
 
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
+      <div class="col">
+        <div class="boxes5">
+          <h4>Mint</h4>
+          <p>OpenSea DROP (public sale) on Jan. 10 @ 9:00 am PDT.</p>
+          <ul>
+            <li>
+              <span style="font-weight: 600">Phase 1:</span>1K NFT for sale
+            </li>
+            <li>
+              <span style="font-weight: 600">Phase 2:</span>4k NFT for sale
+            </li>
+            <li>
+              <span style="font-weight: 600">Phase 3:</span>5k NFT for sale
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-            function flipBox(boxNumber) {
-                var box = document.getElementsByClassName("box")[boxNumber - 1];
-                box.classList.add("flipped");
-            }
+    <div class="container ctv">
+      <div class="col">
+        <p>
+          <a
+            href="https://phialoflife.com/PhialofLife-Whitepaper.pdf"
+            target="_blank"
+            style="text-decoration: none"
+            class="whiteppr-focus"
+            tabindex="9"
+            >View PhialofLife Whitepaper</a
+          >
+        </p>
+      </div>
+    </div>
 
-            var currentBox = null;
+    <!-- Mobile Header -->
+    <div class="mobile-container">
+      <div class="container menumobile">
+        <div class="row">
+          <div class="col-md-6 sideright">
+            <div class="logo">
+              <a href="index.html" class="bth">Phial</a>
+              <a href="index.html" class="bth2">of Life</a>
+            </div>
+          </div>
+          <div class="col-md-6 sideright">
+            <div id="mySidenav" class="sidenav">
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="index.html" class="bth3">Phial</a>
+                  <a href="index.html" class="bth4">of Life</a>
+                </div>
+                <div class="col-md-6">
+                  <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                  >
+                </div>
+              </div>
+              <div class="sidenavmobile">
+                <ul>
+                  <li>
+                    <a href="index.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="gallery.html">Gallery</a>
+                  </li>
+                  <li>
+                    <a href="roadmap.html">Roadmap</a>
+                  </li>
+                  <li>
+                    <a href="team.html">Team</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/phialoflife/"
+                      target="_blank"
+                    >
+                      <span
+                        >Instagram<img
+                          src="assets/images/instagram.svg"
+                          class="ins"
+                      /></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/PhialofLife" target="_blank">
+                      <span
+                        >Twitter<img
+                          src="assets/images/twitter.svg"
+                          class="twiside"
+                      /></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://discord.com/invite/DVC57T7k"
+                      target="_blank"
+                    >
+                      <span
+                        >Discord<img
+                          src="assets/images/discord.svg"
+                          class="disside"
+                      /></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://discord.com/invite/DVC57T7k"
+                      target="_blank"
+                    >
+                      <span
+                        >Visit us on OpenSea<img
+                          src="assets/images/opensea.svg"
+                          class="openside"
+                      /></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <span
+              class="threelines"
+              style="font-size: 30px; cursor: pointer"
+              onclick="openNav()"
+              >&#9776;</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Header Closed -->
 
-            function flipBox(boxNumber) {
-                var box = document.getElementsByClassName("box")[boxNumber - 1];
-                box.classList.add("flipped");
+    <!-- Mobile Body -->
+    <div class="container mobilehomecontent">
+      <div class="row">
+        <div class="col">
+          <h3>Roadmap</h3>
+          <div class="home-line"></div>
+          <div class="foot roadmapfoot">
+            <a
+              href="https://phialoflife.com/PhialofLife-Whitepaper.pdf"
+              target="_blank"
+              ><p>View PhialofLife Whitepaper</p></a
+            >
+          </div>
+          <div class="vision">
+            <h4>Vision</h4>
+            <p>
+              We are your neighbors, we are gifted with insights that will
+              elevate your health and well-being to new realms. We want to take
+              you on this journey with us.
+            </p>
+          </div>
+          <div class="community">
+            <h4>Community</h4>
+            <p>
+              We are building a health and well-being based community that
+              extends to all walk of life. Our community moderators are gifted
+              with insights that will empower our members with the mindset to
+              ascend into new realms in health and well-being.
+            </p>
+          </div>
+          <div class="metaverse">
+            <h4>Metaverse</h4>
+            <p>
+              In an effort to spread the insights that we have acquired from
+              another realm of life, we are bringing PhialofLife NFT project to
+              the Metaverse.
+            </p>
+          </div>
+          <div class="utility">
+            <h4>Utility</h4>
+            <ul>
+              <li>• Voting rights</li>
+              <li>• Metaverse health & well-being community</li>
+              <li>• In-person health & well-being conferences</li>
+              <li>
+                • Product launch that will align with project and benefit the
+                community
+              </li>
+            </ul>
+            <p class="mylight">
+              Before product launch, we will assess our community to ensure that
+              our product choice brings value to our NFT holders. Members with
+              voting rights will have a say in product choice and launch.
+            </p>
+          </div>
+          <div class="mint">
+            <h4>Mint</h4>
+            <p>OpenSea DROP (public sale) on Jan. 10 @ 9:00 am PDT.</p>
+            <ul>
+              <li>
+                <span style="font-weight: 700">• Phase 1:</span> 1K NFT for sale
+              </li>
+              <li>
+                <span style="font-weight: 700">• Phase 2:</span> 4k NFT for sale
+              </li>
+              <li>
+                <span style="font-weight: 700">• Phase 3:</span> 5k NFT for sale
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Body Closed -->
 
-                // Reset the previous box if it exists
-                if (currentBox && currentBox !== box) {
-                    currentBox.classList.remove("flipped");
-                }
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.fancybox.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/wow.js"></script>
+    <script type="text/javascript" src="assets/js/functions.js"></script>
+    <script>
+      setTimeout(function () {
+        $(".beelicious-loader-wrap").fadeOut("fast");
+      }, 2500); // <-- time in milliseconds
 
-                currentBox = box;
-            }
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
 
-            function resetBox(boxNumber) {
-                var box = document.getElementsByClassName("box")[boxNumber - 1];
-                box.classList.remove("flipped");
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
 
-                // Clear the current box variable
-                if (currentBox === box) {
-                    currentBox = null;
-                }
-            }
-        </script>
-    </body>
+      function flipBox(boxNumber) {
+        var box = document.getElementsByClassName("box")[boxNumber - 1];
+        box.classList.add("flipped");
+      }
+
+      var currentBox = null;
+
+      function flipBox(boxNumber) {
+        var box = document.getElementsByClassName("box")[boxNumber - 1];
+        box.classList.add("flipped");
+
+        // Reset the previous box if it exists
+        if (currentBox && currentBox !== box) {
+          currentBox.classList.remove("flipped");
+        }
+
+        currentBox = box;
+      }
+
+      function resetBox(boxNumber) {
+        var box = document.getElementsByClassName("box")[boxNumber - 1];
+        box.classList.remove("flipped");
+
+        // Clear the current box variable
+        if (currentBox === box) {
+          currentBox = null;
+        }
+      }
+    </script>
+  </body>
 </html>
